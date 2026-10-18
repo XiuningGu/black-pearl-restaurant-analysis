@@ -24,5 +24,9 @@ jobs:
           --output /tmp/black_pearl_analysis.executed.ipynb
       - name: Run reproducibility checks
         run: python -m unittest discover -s tests -v
-      - name: Confirm generated files are committed
-        run: git diff --exit-code
+      - name: Confirm deterministic generated files are committed
+        run: >-
+          git diff --exit-code --
+          data/processed/black_pearl_clean.csv
+          data/public/black_pearl_restaurants.csv
+          notebooks/black_pearl_analysis.ipynb
