@@ -1,0 +1,10 @@
+check,value
+restaurant_rows,233
+regions,6
+city_labels,23
+cuisine_labels_non_missing,29
+missing_cuisine,1
+three_diamond_rows,5
+duplicate_name_records,10
+duplicate_city_name_records,6
+non_empty_notes,21

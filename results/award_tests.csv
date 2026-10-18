@@ -1,0 +1,12 @@
+metric,value
+annual_star_mean,3.4935622317596566
+black_pearl_listing_mean,3.948497854077253
+mean_paired_difference,-0.45493562231759654
+median_paired_difference,0.0
+wilcoxon_statistic,4438.0
+wilcoxon_p_value,1.5134813560247614e-05
+rank_biserial_correlation,-0.3747534516765286
+spearman_rho,0.7092160137434542
+spearman_p_value,6.273384107931301e-37
+paired_cohens_dz,-0.29499333865148075
+paper_style_pooled_d_not_paired,-0.2464095537829212

@@ -1,0 +1,8 @@
+metric,value
+shapiro_w,0.9112202554138805
+shapiro_p_value,1.492650809657112e-10
+breusch_pagan_lm,12.920344906644656
+breusch_pagan_p_value,0.0003250299640915454
+cooks_distance_threshold_4_over_n,0.017167381974248927
+observations_above_cooks_threshold,9.0
+maximum_cooks_distance,0.4049698091699726
