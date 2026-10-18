@@ -1,0 +1,234 @@
+﻿source_row,region,city,diamond_level,restaurant_name,cuisine,total_score,taste_score,environment_score,service_score,favourites_thousands,review_count,years_open,annual_star_count,black_pearl_listing_count,avg_price_cny,branch_count,notes,favourites_count,region_short,restaurant_key
+2,上海 Shanghai,上海 Shanghai,3,菁禧荟(外滩店),地方菜-潮汕菜,4.5,4.5,4.7,4.6,69.0,2426,5.0,4,1,1058,3,,69000.0,Shanghai,上海 Shanghai | 菁禧荟(外滩店)
+3,上海 Shanghai,上海 Shanghai,3,甬府·北外滩,地方菜-浙菜,4.8,4.8,4.9,4.8,26.9,819,2.0,1,1,997,9,,26900.0,Shanghai,上海 Shanghai | 甬府·北外滩
+4,上海 Shanghai,上海 Shanghai,2,西郊5号·Maggie 5,地方菜-上海本帮菜,4.6,4.4,4.7,4.6,75.9,2609,16.0,5,7,1121,0,,75900.0,Shanghai,上海 Shanghai | 西郊5号·Maggie 5
+5,上海 Shanghai,上海 Shanghai,2,福和慧,素食,4.6,4.4,4.8,4.7,205.4,6628,10.0,5,7,1159,3,,205400.0,Shanghai,上海 Shanghai | 福和慧
+6,上海 Shanghai,上海 Shanghai,2,Le Comptoir de Pierre Gagnaire,法国菜,4.4,4.3,4.8,4.6,158.5,4632,7.0,5,6,1439,0,,158500.0,Shanghai,上海 Shanghai | Le Comptoir de Pierre Gagnaire
+7,上海 Shanghai,上海 Shanghai,2,荣府宴(南阳路店),地方菜-苏浙菜,4.8,4.8,4.8,4.8,84.9,1723,13.0,6,6,2313,5,,84900.0,Shanghai,上海 Shanghai | 荣府宴(南阳路店)
+8,上海 Shanghai,上海 Shanghai,2,The Pine 松涧,西餐,4.6,4.4,4.8,4.7,111.2,3032,5.0,5,5,1476,0,食材评分4.8,111200.0,Shanghai,上海 Shanghai | The Pine 松涧
+9,上海 Shanghai,上海 Shanghai,2,鲁采LU STYLE(环宇荟店),海鲜,4.6,4.6,4.8,4.8,109.5,5100,5.0,4,5,538,0,,109500.0,Shanghai,上海 Shanghai | 鲁采LU STYLE(环宇荟店)
+10,上海 Shanghai,上海 Shanghai,2,Ultraviolet by Paul Pairet,法国菜,4.8,4.8,4.9,4.9,224.3,1722,11.0,4,7,6580,2,,224300.0,Shanghai,上海 Shanghai | Ultraviolet by Paul Pairet
+11,上海 Shanghai,上海 Shanghai,2,DA VITTORIO SHANGHAI(外滩店),意大利菜,4.4,4.4,4.8,4.6,211.8,4719,4.0,4,4,3019,1,,211800.0,Shanghai,上海 Shanghai | DA VITTORIO SHANGHAI(外滩店)
+12,上海 Shanghai,上海 Shanghai,2,遇外滩(BFC外滩金融中心店),地方菜-福建菜,4.6,4.6,4.7,4.6,143.6,4947,5.0,4,4,828,2,,143600.0,Shanghai,上海 Shanghai | 遇外滩(BFC外滩金融中心店)
+13,上海 Shanghai,上海 Shanghai,2,8½ Otto e Mezzo BOMBANA(外滩店),意大利菜,4.3,4.2,4.6,4.5,135.6,3666,12.0,4,7,2317,0,,135600.0,Shanghai,上海 Shanghai | 8½ Otto e Mezzo BOMBANA(外滩店)
+14,上海 Shanghai,上海 Shanghai,2,Maison Lameloise 莱美露滋(上海中心店),法国菜,4.6,4.4,4.8,4.8,155.8,3778,5.0,4,5,1800,0,,155800.0,Shanghai,上海 Shanghai | Maison Lameloise 莱美露滋(上海中心店)
+15,上海 Shanghai,上海 Shanghai,1,周舍·海派菜(虹桥店),地方菜-上海本帮菜,4.6,4.6,4.6,4.7,38.1,1327,4.0,4,3,518,1,,38100.0,Shanghai,上海 Shanghai | 周舍·海派菜(虹桥店)
+16,上海 Shanghai,上海 Shanghai,1,逸谷会(虹桥天地店),地方菜-粤菜,4.8,4.8,4.8,4.8,21.6,1416,4.0,3,3,460,2,,21600.0,Shanghai,上海 Shanghai | 逸谷会(虹桥天地店)
+17,上海 Shanghai,上海 Shanghai,1,明阁,地方菜-粤菜,4.3,4.7,4.4,4.4,57.0,2429,6.0,5,6,836,0,,57000.0,Shanghai,上海 Shanghai | 明阁
+18,上海 Shanghai,上海 Shanghai,1,广舟(千禧店),地方菜-粤菜,4.7,4.7,4.6,4.8,49.3,1718,4.0,2,3,758,2,,49300.0,Shanghai,上海 Shanghai | 广舟(千禧店)
+19,上海 Shanghai,上海 Shanghai,1,子福慧(虹桥店),地方菜-粤菜,4.7,4.7,4.8,4.8,31.7,737,7.0,5,6,980,1,,31700.0,Shanghai,上海 Shanghai | 子福慧(虹桥店)
+20,上海 Shanghai,上海 Shanghai,1,成隆行·颐丰花园(虹桥店),海鲜,4.4,4.4,4.4,4.3,34.3,2708,16.0,4,2,919,2,,34300.0,Shanghai,上海 Shanghai | 成隆行·颐丰花园(虹桥店)
+21,上海 Shanghai,上海 Shanghai,1,Villa Le Bec321,法国菜,4.1,4.1,4.4,4.0,279.7,5744,9.0,3,4,812,0,,279700.0,Shanghai,上海 Shanghai | Villa Le Bec321
+22,上海 Shanghai,上海 Shanghai,1,鹿园 MOOSE(长宁店),地方菜-淮扬菜,4.3,4.3,4.5,4.3,184.2,7406,11.0,4,5,556,2,食材评分4.7,184200.0,Shanghai,上海 Shanghai | 鹿园 MOOSE(长宁店)
+23,上海 Shanghai,上海 Shanghai,1,宮鳩,日本料理,4.5,4.5,4.5,4.5,26.3,426,2.0,1,1,1439,0,食材评分4.8,26300.0,Shanghai,上海 Shanghai | 宮鳩
+24,上海 Shanghai,上海 Shanghai,1,鮨昇(泰安路店),日本料理,4.8,4.8,4.7,4.8,92.7,1514,3.0,3,3,1469,1,,92700.0,Shanghai,上海 Shanghai | 鮨昇(泰安路店)
+25,上海 Shanghai,上海 Shanghai,1,福1015(愚园路店),地方菜-上海本帮菜,4.7,4.6,4.8,4.7,121.1,2308,13.0,5,7,1482,3,,121100.0,Shanghai,上海 Shanghai | 福1015(愚园路店)
+26,上海 Shanghai,上海 Shanghai,1,南兴园,地方菜-川菜,4.3,4.3,4.5,4.5,55.6,911,3.0,2,2,976,0,,55600.0,Shanghai,上海 Shanghai | 南兴园
+27,上海 Shanghai,上海 Shanghai,1,泰安门Taian Table(镇宁路店),法国菜,4.3,4.3,4.4,4.4,103.2,2028,7.0,4,5,2971,0,,103200.0,Shanghai,上海 Shanghai | 泰安门Taian Table(镇宁路店)
+28,上海 Shanghai,上海 Shanghai,1,福1088,地方菜-上海本帮菜,4.6,4.4,4.6,4.4,168.9,5644,16.0,4,7,659,3,,168900.0,Shanghai,上海 Shanghai | 福1088
+29,上海 Shanghai,上海 Shanghai,1,伯衡55·吉品轩(乌鲁木齐南路店),地方菜-粤菜,4.5,4.4,4.7,4.6,84.3,2026,6.0,4,3,1172,0,食材评分4.5,84300.0,Shanghai,上海 Shanghai | 伯衡55·吉品轩(乌鲁木齐南路店)
+30,上海 Shanghai,上海 Shanghai,1,上海鮨太郎·巓(建业里店),日本料理,4.3,4.3,4.4,4.5,32.7,888,7.0,4,6,1834,0,,32700.000000000004,Shanghai,上海 Shanghai | 上海鮨太郎·巓(建业里店)
+31,上海 Shanghai,上海 Shanghai,1,MERCADO 505 Gourmet Restaurant,西班牙菜,4.4,4.5,4.4,4.4,238.6,6092,5.0,4,3,647,0,,238600.0,Shanghai,上海 Shanghai | MERCADO 505 Gourmet Restaurant
+32,上海 Shanghai,上海 Shanghai,1,斐霓丝PHENIX(璞丽酒店),法国菜,4.4,4.4,4.8,4.5,95.1,3668,7.0,4,5,1233,0,,95100.0,Shanghai,上海 Shanghai | 斐霓丝PHENIX(璞丽酒店)
+33,上海 Shanghai,上海 Shanghai,1,Stone Sal 言盐西餐厅(东湖路店),西餐,4.4,4.5,4.6,4.5,236.1,7447,6.0,4,5,1139,0,,236100.0,Shanghai,上海 Shanghai | Stone Sal 言盐西餐厅(东湖路店)
+34,上海 Shanghai,上海 Shanghai,1,醉东Oriental House(静安嘉里店),地方菜-上海本帮菜,4.6,4.6,4.6,4.6,216.6,12712,6.0,3,4,297,0,食材评分4.8,216600.0,Shanghai,上海 Shanghai | 醉东Oriental House(静安嘉里店)
+35,上海 Shanghai,上海 Shanghai,1,MIND YAKINIKU 烧肉·至心,日本料理,4.8,4.8,4.8,4.8,26.6,766,2.0,1,1,837,0,,26600.0,Shanghai,上海 Shanghai | MIND YAKINIKU 烧肉·至心
+36,上海 Shanghai,上海 Shanghai,1,楼上荟馆(静安嘉里中心店),地方菜-粤菜,4.7,4.7,4.8,4.8,57.0,3099,5.0,4,4,958,2,,57000.0,Shanghai,上海 Shanghai | 楼上荟馆(静安嘉里中心店)
+37,上海 Shanghai,上海 Shanghai,1,大董(环贸iapm店),地方菜-北京菜,4.3,4.3,4.4,4.3,86.0,15033,9.0,1,4,484,2,,86000.0,Shanghai,上海 Shanghai | 大董(环贸iapm店)
+38,上海 Shanghai,上海 Shanghai,1,景煊 SOLE,地方菜-粤菜,4.4,4.4,4.6,4.5,23.9,609,3.0,0,1,558,0,,23900.0,Shanghai,上海 Shanghai | 景煊 SOLE
+39,上海 Shanghai,上海 Shanghai,1,中国菜·头灶,中餐,4.1,4.1,4.1,4.2,28.9,374,2.0,1,1,2326,0,,28900.0,Shanghai,上海 Shanghai | 中国菜·头灶
+40,上海 Shanghai,上海 Shanghai,1,老兴鲜,地方菜-上海本帮菜,4.9,4.9,4.8,4.9,120.4,6122,5.0,3,1,256,0,,120400.0,Shanghai,上海 Shanghai | 老兴鲜
+41,上海 Shanghai,上海 Shanghai,1,Obscura by 唐香,中餐,4.1,4.1,4.4,4.5,46.7,576,3.0,3,2,2801,0,,46700.0,Shanghai,上海 Shanghai | Obscura by 唐香
+42,上海 Shanghai,上海 Shanghai,1,晶采轩(恒隆广场店),地方菜-粤菜,4.7,4.7,4.8,4.7,76.3,4128,6.0,5,6,645,3,,76300.0,Shanghai,上海 Shanghai | 晶采轩(恒隆广场店)
+43,上海 Shanghai,上海 Shanghai,1,东方景宴(思南公馆店),地方菜-潮汕菜,4.6,4.6,4.7,4.6,49.9,1342,3.0,3,2,539,0,,49900.0,Shanghai,上海 Shanghai | 东方景宴(思南公馆店)
+44,上海 Shanghai,上海 Shanghai,1,壳里西餐厅Coquille Seafood Bistro(蒙自路店),法国菜,4.4,4.4,4.4,4.4,374.5,11471,10.0,5,3,1240,0,,374500.0,Shanghai,上海 Shanghai | 壳里西餐厅Coquille Seafood Bistro(蒙自路店)
+45,上海 Shanghai,上海 Shanghai,1,随堂里,地方菜-苏浙菜,4.5,4.5,4.6,4.5,193.5,5581,5.0,4,5,480,0,,193500.0,Shanghai,上海 Shanghai | 随堂里
+46,上海 Shanghai,上海 Shanghai,1,食廬NOBLE(凯德晶萃店),地方菜-淮扬菜,4.8,4.8,4.8,4.7,39.7,3441,2.0,2,1,313,5,,39700.0,Shanghai,上海 Shanghai | 食廬NOBLE(凯德晶萃店)
+47,上海 Shanghai,上海 Shanghai,1,席作·福建会馆,地方菜-福建菜,4.8,4.8,4.8,4.8,59.8,2958,3.0,2,2,710,0,,59800.0,Shanghai,上海 Shanghai | 席作·福建会馆
+48,上海 Shanghai,上海 Shanghai,1,洋房火锅(新天地店),火锅,4.8,4.7,4.8,4.8,142.8,7586,11.0,5,7,1194,0,,142800.0,Shanghai,上海 Shanghai | 洋房火锅(新天地店)
+49,上海 Shanghai,上海 Shanghai,1,甬江春(新天地店),地方菜-浙菜,4.8,4.7,4.8,4.8,30.5,1260,3.0,3,2,603,0,,30500.0,Shanghai,上海 Shanghai | 甬江春(新天地店)
+50,上海 Shanghai,上海 Shanghai,1,海味观(老西门店),地方菜-上海本帮菜,4.8,4.8,4.8,4.8,41.8,1437,2.0,2,2,1437,1,,41800.0,Shanghai,上海 Shanghai | 海味观(老西门店)
+51,上海 Shanghai,上海 Shanghai,1,IL RISTORANTE - NIKO ROMITO,意大利菜,4.4,4.2,4.8,4.7,82.3,2339,5.0,4,3,1681,0,,82300.0,Shanghai,上海 Shanghai | IL RISTORANTE - NIKO ROMITO
+52,上海 Shanghai,上海 Shanghai,1,宝丽轩中餐厅BAOLIXUAN,地方菜-粤菜,4.6,4.5,4.8,4.8,66.1,2208,5.0,4,4,2208,0,食材评分4.6,66100.0,Shanghai,上海 Shanghai | 宝丽轩中餐厅BAOLIXUAN
+53,上海 Shanghai,上海 Shanghai,1,Horita堀田,日本料理,4.4,4.4,4.4,4.6,19.4,632,10.0,3,4,2400,0,食材评分4.5,19400.0,Shanghai,上海 Shanghai | Horita堀田
+54,上海 Shanghai,上海 Shanghai,1,茹丝葵经典牛排馆,牛排,4.5,4.4,4.5,4.4,255.4,14397,10.0,5,7,971,0,,255400.0,Shanghai,上海 Shanghai | 茹丝葵经典牛排馆
+55,上海 Shanghai,上海 Shanghai,1,皇朝会(外滩店),地方菜-粤菜,4.6,4.5,4.6,4.6,81.7,3145,8.0,5,7,337,0,,81700.0,Shanghai,上海 Shanghai | 皇朝会(外滩店)
+56,上海 Shanghai,上海 Shanghai,1,Jean Georges,法国菜,4.4,4.0,4.5,4.4,211.1,11609,19.0,5,5,888,0,,211100.0,Shanghai,上海 Shanghai | Jean Georges
+57,上海 Shanghai,上海 Shanghai,1,Mr & Mrs Bund by Paul Pairet,法国菜,4.0,3.9,4.3,4.1,199.7,7326,14.0,4,7,923,2,,199700.0,Shanghai,上海 Shanghai | Mr & Mrs Bund by Paul Pairet
+58,上海 Shanghai,上海 Shanghai,1,逸道(外滩源店),地方菜-淮扬菜,4.8,4.7,4.7,4.8,166.23,6167,6.0,5,4,499,2,,166230.0,Shanghai,上海 Shanghai | 逸道(外滩源店)
+59,上海 Shanghai,上海 Shanghai,1,上海滩餐厅(BFC外滩金融中心店),地方菜-上海本帮菜,4.8,4.8,4.8,4.6,140.2,5288,6.0,5,3,580,2,,140200.0,Shanghai,上海 Shanghai | 上海滩餐厅(BFC外滩金融中心店)
+60,上海 Shanghai,上海 Shanghai,1,橼舍鮨青木(益丰·外滩源店),日本料理,4.5,4.5,4.5,4.6,83.7,1705,9.0,3,2,2145,0,食材评分4.7,83700.0,Shanghai,上海 Shanghai | 橼舍鮨青木(益丰·外滩源店)
+61,上海 Shanghai,上海 Shanghai,1,くろぎ Kurogi 黑木,日本料理,4.5,4.4,4.6,4.8,88.2,1325,5.0,4,5,3377,0,,88200.0,Shanghai,上海 Shanghai | くろぎ Kurogi 黑木
+62,上海 Shanghai,上海 Shanghai,1,泓0871臻选云南菜(上海北外滩店),地方菜-云南菜,4.4,4.4,4.6,4.4,59.4,1555,3.0,2,2,480,0,,59400.0,Shanghai,上海 Shanghai | 泓0871臻选云南菜(上海北外滩店)
+63,上海 Shanghai,上海 Shanghai,1,临江宴(陆家嘴店),地方菜-苏浙菜,4.8,4.8,4.8,4.8,40.0,1178,5.0,3,5,502,0,,40000.0,Shanghai,上海 Shanghai | 临江宴(陆家嘴店)
+64,上海 Shanghai,上海 Shanghai,1,金轩中餐厅 Jin Xuan(浦东丽思卡尔顿酒店),地方菜-粤菜,4.5,4.3,4.8,4.6,64.5,2861,13.0,5,4,983,0,,64500.0,Shanghai,上海 Shanghai | 金轩中餐厅 Jin Xuan(浦东丽思卡尔顿酒店)
+65,上海 Shanghai,上海 Shanghai,1,南麓·荟馆,地方菜-浙菜,4.5,4.6,4.7,4.7,18.4,853,2.0,1,1,450,0,,18400.0,Shanghai,上海 Shanghai | 南麓·荟馆
+66,上海 Shanghai,上海 Shanghai,1,临江宴(陆家嘴店),地方菜-苏浙菜,4.8,4.8,4.8,4.8,40.1,1178,5.0,3,4,502,0,,40100.0,Shanghai,上海 Shanghai | 临江宴(陆家嘴店)
+67,上海 Shanghai,上海 Shanghai,1,上海柏悦酒店·悦轩,地方菜-上海本帮菜,4.7,4.6,4.8,4.7,66.4,3173,8.0,4,3,746,0,,66400.0,Shanghai,上海 Shanghai | 上海柏悦酒店·悦轩
+68,上海 Shanghai,上海 Shanghai,1,樽宴,地方菜-苏浙菜,4.9,4.9,4.9,4.9,35.6,824,7.0,5,3,946,0,,35600.0,Shanghai,上海 Shanghai | 樽宴
+69,华北地区 North China,北京 Beijing,3,美·大董海参店(南新仓店),地方菜-北京菜,4.5,4.2,4.3,4.0,43.6,13970,17.0,3,4,980,0,,43600.0,North China,北京 Beijing | 美·大董海参店(南新仓店)
+70,华北地区 North China,北京 Beijing,2,晟永興烤鸭店(三里屯店),地方菜-北京菜,4.8,4.8,4.8,4.8,162.3,6715,7.0,5,6,537,1,,162300.0,North China,北京 Beijing | 晟永興烤鸭店(三里屯店)
+71,华北地区 North China,北京 Beijing,2,新荣记(新源南路店),地方菜-苏浙菜,4.8,4.8,4.9,4.8,139.5,4825,5.0,4,5,1017,4,,139500.0,North China,北京 Beijing | 新荣记(新源南路店)
+72,华北地区 North China,北京 Beijing,2,京艷·翰林书院,地方菜-北京菜,4.7,4.6,4.8,4.7,71.6,1299,3.0,1,2,1246,0,,71600.0,North China,北京 Beijing | 京艷·翰林书院
+73,华北地区 North China,北京 Beijing,1,泓0871臻选云南菜,地方菜-云南菜,4.4,4.4,4.7,4.4,119.2,3633,5.0,6,5,297,0,,119200.0,North China,北京 Beijing | 泓0871臻选云南菜
+74,华北地区 North China,北京 Beijing,1,京季荣派官府菜,地方菜-北京菜,4.8,4.8,4.8,4.9,56.0,1159,3.0,3,3,1520,0,,56000.0,North China,北京 Beijing | 京季荣派官府菜
+75,华北地区 North China,北京 Beijing,1,北京厨房(SKP店),地方菜-粤菜,4.2,4.2,4.3,4.3,107.5,6342,7.0,4,6,400,1,,107500.0,North China,北京 Beijing | 北京厨房(SKP店)
+76,华北地区 North China,北京 Beijing,1,利苑酒家(华熙国际店),地方菜-粤菜,4.4,4.5,4.4,4.4,114.4,5154,14.0,4,7,350,1,食材评分4.8,114400.0,North China,北京 Beijing | 利苑酒家(华熙国际店)
+77,华北地区 North China,北京 Beijing,1,官也街澳门火锅(国贸商城店),火锅,4.7,4.8,4.8,4.6,69.8,4516,6.0,5,6,831,2,,69800.0,North China,北京 Beijing | 官也街澳门火锅(国贸商城店)
+78,华北地区 North China,北京 Beijing,1,扬州宴(北京店),地方菜-淮扬菜,4.7,4.7,4.8,4.8,8.9,351,1.0,1,1,405,0,,8900.0,North China,北京 Beijing | 扬州宴(北京店)
+79,华北地区 North China,北京 Beijing,1,Opera Bombana,意大利菜,4.3,4.2,4.4,4.4,121.1,5203,10.0,5,7,999,0,,121100.0,North China,北京 Beijing | Opera Bombana
+80,华北地区 North China,北京 Beijing,1,山河万朵中国素食VEGE WONDER(王府中环店),素食,4.5,4.5,4.6,4.6,66.8,2218,4.0,4,3,955,0,,66800.0,North China,北京 Beijing | 山河万朵中国素食VEGE WONDER(王府中环店)
+81,华北地区 North China,北京 Beijing,1,唐人馆(王府中环店),私房菜,4.4,4.4,4.6,4.4,11.9,333,3.0,2,1,1452,0,,11900.0,North China,北京 Beijing | 唐人馆(王府中环店)
+82,华北地区 North China,北京 Beijing,1,兰斋LAMDRE,素食,4.8,4.8,4.9,4.9,25.4,522,1.0,1,1,1372,0,,25400.0,North China,北京 Beijing | 兰斋LAMDRE
+83,华北地区 North China,北京 Beijing,1,Oyster Talks 四度蚝法餐厅,法国菜,4.7,4.6,4.7,4.7,52.9,1358,10.0,5,1,988,0,,52900.0,North China,北京 Beijing | Oyster Talks 四度蚝法餐厅
+84,华北地区 North China,北京 Beijing,1,Amico BJ,西餐,4.6,4.5,4.6,4.8,77.2,1512,7.0,5,5,1700,0,,77200.0,North China,北京 Beijing | Amico BJ
+85,华北地区 North China,北京 Beijing,1,沃夫冈牛排馆Wolfgang’s Steakhouse(三里屯店),西餐,4.6,4.6,4.6,4.6,145.9,7837,7.0,5,6,1115,0,,145900.0,North China,北京 Beijing | 沃夫冈牛排馆Wolfgang’s Steakhouse(三里屯店)
+86,华北地区 North China,北京 Beijing,1,Ling Long,中餐,4.6,4.7,4.3,4.8,63.6,1804,4.0,4,4,1470,0,食材评分4.9,63600.0,North China,北京 Beijing | Ling Long
+87,华北地区 North China,北京 Beijing,1,宝屋日料(通盈中心店),日本料理,4.9,4.9,4.7,4.9,116.4,2557,7.0,5,4,1315,0,食材评分4.8,116400.0,North China,北京 Beijing | 宝屋日料(通盈中心店)
+88,华北地区 North China,北京 Beijing,1,雪崴(中国红街店),日本料理,4.5,4.5,4.4,4.5,81.0,2022,8.0,5,7,1103,0,,81000.0,North China,北京 Beijing | 雪崴(中国红街店)
+89,华北地区 North China,北京 Beijing,1,富临饭店,海鲜,4.6,4.6,4.8,4.7,19.7,514,3.0,1,1,1220,0,,19700.0,North China,北京 Beijing | 富临饭店
+90,华北地区 North China,北京 Beijing,1,富春居,地方菜-粤菜,4.5,4.4,4.8,4.7,93.7,3025,5.0,4,3,717,0,,93700.0,North China,北京 Beijing | 富春居
+91,华北地区 North China,北京 Beijing,1,美·大董海参店(南新仓店),地方菜-北京菜,4.5,4.2,4.3,4.0,43.6,13970,17.0,3,4,980,15,,43600.0,North China,北京 Beijing | 美·大董海参店(南新仓店)
+92,华北地区 North China,北京 Beijing,1,宴锦堂(隆福寺店),中餐,4.6,4.6,4.7,4.7,42.7,500,4.0,3,4,865,0,,42700.0,North China,北京 Beijing | 宴锦堂(隆福寺店)
+93,华北地区 North China,北京 Beijing,1,鮨然(然寿司钱粮胡同店),日本料理,4.8,4.8,4.6,4.7,91.5,1810,12.0,5,7,1500,2,,91500.0,North China,北京 Beijing | 鮨然(然寿司钱粮胡同店)
+94,华北地区 North China,北京 Beijing,1,晟永興烤鸭店(三里屯店),地方菜-北京菜,4.8,4.8,4.8,4.8,162.4,6716,7.0,5,6,537,1,食材评分4.9,162400.0,North China,北京 Beijing | 晟永興烤鸭店(三里屯店)
+95,华北地区 North China,北京 Beijing,1,珍滋味海鲜火锅(蓝色港湾店),火锅,4.8,4.8,4.8,4.8,69.7,4735,5.0,4,5,380,3,,69700.0,North China,北京 Beijing | 珍滋味海鲜火锅(蓝色港湾店)
+96,华北地区 North China,北京 Beijing,1,LES MORILLES樂·墨瑞,法国菜,4.5,4.5,4.5,4.7,67.9,1965,6.0,5,6,1658,0,食材评分4.8,67900.0,North China,北京 Beijing | LES MORILLES樂·墨瑞
+97,华北地区 North China,北京 Beijing,1,鮨龍,日本料理,4.8,4.8,4.7,4.8,45.8,749,5.0,4,3,2974,0,,45800.0,North China,北京 Beijing | 鮨龍
+98,华北地区 North China,北京 Beijing,1,曲廊院(东四十一条店),中餐,4.5,4.4,4.8,4.8,169.9,4755,7.0,5,5,859,0,,169900.0,North China,北京 Beijing | 曲廊院(东四十一条店)
+99,华北地区 North China,济南 Jinan,1,鲁采 LU STYLE(CBD店),地方菜-鲁菜,4.7,4.8,4.8,4.8,26.3,2488,4.0,4,2,464,0,,26300.0,North China,济南 Jinan | 鲁采 LU STYLE(CBD店)
+100,华北地区 North China,天津 Tianjing,1,泉客厅Spring Pavilion 中餐厅,地方菜-鲁菜,4.8,4.8,4.9,4.8,15.3,1007,5.0,2,1,1009,0,,15300.0,North China,天津 Tianjing | 泉客厅Spring Pavilion 中餐厅
+101,华北地区 North China,天津 Tianjing,1,四季酒店·津韵中餐厅,地方菜-粤菜,4.6,4.6,4.8,4.7,26.7,1692,7.0,5,7,584,0,,26700.0,North China,天津 Tianjing | 四季酒店·津韵中餐厅
+102,偏西南地区 Southwest China,成都 Chengdu,2,有雲·鹿洄天府 1911中国川菜体验中心,地方菜-川菜,4.4,4.4,4.7,4.6,14.8,293,3.0,2,2,1108,0,食材评分4.8,14800.0,Southwest China,成都 Chengdu | 有雲·鹿洄天府 1911中国川菜体验中心
+103,偏西南地区 Southwest China,成都 Chengdu,2,漾亚·雍雅合鲜(桐梓林店),火锅,4.4,4.4,4.6,4.5,27.0,1261,17.0,4,5,726,1,,27000.0,Southwest China,成都 Chengdu | 漾亚·雍雅合鲜(桐梓林店)
+104,偏西南地区 Southwest China,成都 Chengdu,1,许家菜(望江店),地方菜-川菜,4.7,4.7,4.8,4.8,52.8,3131,11.0,4,7,542,3,,52800.0,Southwest China,成都 Chengdu | 许家菜(望江店)
+105,偏西南地区 Southwest China,成都 Chengdu,1,松云泽,地方菜-川菜,4.3,4.3,4.4,4.3,41.5,862,6.0,3,6,954,0,,41500.0,Southwest China,成都 Chengdu | 松云泽
+106,偏西南地区 Southwest China,成都 Chengdu,1,廊桥THE BRIDGE,地方菜-川菜,4.5,4.4,4.8,4.6,63.8,3882,18.0,4,6,736,0,,63800.0,Southwest China,成都 Chengdu | 廊桥THE BRIDGE
+107,偏西南地区 Southwest China,成都 Chengdu,1,Tivano意大利餐厅(笔帖式街店),西餐,4.5,4.4,4.8,4.8,65.6,3714,9.0,4,7,543,0,,65600.0,Southwest China,成都 Chengdu | Tivano意大利餐厅(笔帖式街店)
+108,偏西南地区 Southwest China,成都 Chengdu,1,雏Chú MODERN CUISINE,西餐,4.5,4.4,4.7,4.8,74.8,2281,9.0,4,3,773,0,食材评分4.8,74800.0,Southwest China,成都 Chengdu | 雏Chú MODERN CUISINE
+109,偏西南地区 Southwest China,成都 Chengdu,1,8号火锅中餐厅(成都群光君悦酒店),火锅,4.6,4.4,4.8,4.7,39.8,3374,8.0,4,6,438,0,,39800.0,Southwest China,成都 Chengdu | 8号火锅中餐厅(成都群光君悦酒店)
+110,偏西南地区 Southwest China,成都 Chengdu,1,银芭1986,地方菜-川菜,4.3,4.3,4.4,4.4,28.4,1862,6.0,4,5,496,0,食材评分4.9,28400.0,Southwest China,成都 Chengdu | 银芭1986
+111,偏西南地区 Southwest China,成都 Chengdu,1,银滩鲍鱼火锅(希望路店),火锅,4.7,4.8,4.5,4.7,27.7,1365,7.0,5,7,540,3,,27700.0,Southwest China,成都 Chengdu | 银滩鲍鱼火锅(希望路店)
+112,偏西南地区 Southwest China,成都 Chengdu,1,岷山饭店·THE RIVER HOUSE西餐厅,西餐,4.8,4.8,4.8,4.9,54.1,3301,11.0,5,7,701,0,,54100.0,Southwest China,成都 Chengdu | 岷山饭店·THE RIVER HOUSE西餐厅
+113,偏西南地区 Southwest China,成都 Chengdu,1,南堂館川菜文化餐厅(天府店),地方菜-川菜,4.6,4.6,4.8,4.5,18.0,2693,12.0,3,1,338,4,,18000.0,Southwest China,成都 Chengdu | 南堂館川菜文化餐厅(天府店)
+114,偏西南地区 Southwest China,成都 Chengdu,1,成都宴(桐梓林店),中餐,4.6,4.8,4.8,4.8,58.0,2692,6.0,4,3,1000,0,,58000.0,Southwest China,成都 Chengdu | 成都宴(桐梓林店)
+115,偏西南地区 Southwest China,成都 Chengdu,1,临江宴·雲,地方菜-潮汕菜,4.8,4.8,4.8,4.8,13.4,298,3.0,2,2,800,0,,13400.0,Southwest China,成都 Chengdu | 临江宴·雲
+116,偏西南地区 Southwest China,成都 Chengdu,1,福满楼·Hokkien Cuisine(中国华商店),地方菜-福建菜,4.8,4.8,4.8,4.9,13.9,647,3.0,1,1,731,0,,13900.0,Southwest China,成都 Chengdu | 福满楼·Hokkien Cuisine(中国华商店)
+117,偏西南地区 Southwest China,成都 Chengdu,1,新荣记(成都华商店),地方菜-浙菜,4.7,4.7,4.9,4.8,23.6,1327,3.0,1,1,1105,0,,23600.0,Southwest China,成都 Chengdu | 新荣记(成都华商店)
+118,偏西南地区 Southwest China,成都 Chengdu,1,Silver pot·银锅现代川菜(悠方店),中餐,4.7,4.7,4.8,4.8,58.8,1833,5.0,4,3,783,0,,58800.0,Southwest China,成都 Chengdu | Silver pot·银锅现代川菜(悠方店)
+119,偏西南地区 Southwest China,成都 Chengdu,1,S Kitchen偲厨,西餐,4.3,4.3,4.5,4.4,40.3,1410,5.0,4,2,698,0,,40300.0,Southwest China,成都 Chengdu | S Kitchen偲厨
+120,偏西南地区 Southwest China,成都 Chengdu,1,柴门荟(中海店),地方菜-川菜,4.6,4.5,4.8,4.8,18.4,945,4.0,3,2,903,0,,18400.0,Southwest China,成都 Chengdu | 柴门荟(中海店)
+121,偏西南地区 Southwest China,成都 Chengdu,1,翠玲珑CUI(万象南路店),中餐,4.4,4.3,4.7,4.6,26.8,896,6.0,4,4,792,0,食材评分4.9,26800.0,Southwest China,成都 Chengdu | 翠玲珑CUI(万象南路店)
+122,偏西南地区 Southwest China,重庆 Chongqing,1,滟设火锅料理(南滨路店),火锅,4.8,4.8,4.9,4.9,27.1,1325,6.0,5,5,734,0,,27100.0,Southwest China,重庆 Chongqing | 滟设火锅料理(南滨路店)
+123,偏西南地区 Southwest China,重庆 Chongqing,1,罗宾斯牛排馆(重庆丽晶酒店),西餐,4.7,4.7,4.8,4.8,27.2,2560,7.0,5,4,696,0,,27200.0,Southwest China,重庆 Chongqing | 罗宾斯牛排馆(重庆丽晶酒店)
+124,偏西南地区 Southwest China,重庆 Chongqing,1,芊月茗素食私宴,素食,4.7,4.6,4.8,4.8,28.7,2347,8.0,4,6,692,0,,28700.0,Southwest China,重庆 Chongqing | 芊月茗素食私宴
+125,偏西南地区 Southwest China,重庆 Chongqing,1,于塗,地方菜-川菜,4.6,4.5,4.8,4.8,28.6,1116,12.0,4,7,950,0,,28600.0,Southwest China,重庆 Chongqing | 于塗
+126,偏西南地区 Southwest China,重庆 Chongqing,1,山茶四季(万象城店),地方菜-川菜,4.6,4.5,4.8,4.8,15.4,1031,3.0,2,2,256,2,,15400.0,Southwest China,重庆 Chongqing | 山茶四季(万象城店)
+127,偏西南地区 Southwest China,昆明 Kunming,1,翠府(翠湖北路店),地方菜-云南菜,4.7,4.7,4.8,4.8,32.3,2936,13.0,4,6,490,0,,32299.999999999996,Southwest China,昆明 Kunming | 翠府(翠湖北路店)
+128,偏西南地区 Southwest China,昆明 Kunming,1,依锦上庭(公园1903店),地方菜-云南菜,4.7,4.7,4.8,4.7,7.25,477,3.0,2,1,379,0,,7250.0,Southwest China,昆明 Kunming | 依锦上庭(公园1903店)
+129,偏西南地区 Southwest China,昆明 Kunming,1,昆明洲际酒店·香稻轩中餐厅,地方菜-云南菜,4.7,4.6,4.8,4.8,13.8,2272,6.0,4,2,283,0,食材评分4.9,13800.0,Southwest China,昆明 Kunming | 昆明洲际酒店·香稻轩中餐厅
+130,偏西南地区 Southwest China,西安 Xi'an,1,铭家(曲江店),海鲜,4.8,4.9,4.9,4.9,16.4,649,2.0,1,1,578,1,,16400.0,Southwest China,西安 Xi'an | 铭家(曲江店)
+131,偏西南地区 Southwest China,西安 Xi'an,1,莲西餐,西餐,4.7,4.6,4.8,4.8,54.1,3045,7.0,5,7,550,0,,54100.0,Southwest China,西安 Xi'an | 莲西餐
+132,偏西南地区 Southwest China,西安 Xi'an,1,长安荟·原味陕菜,地方菜-陕西菜,4.5,4.4,4.7,4.7,64.3,2863,5.0,3,2,379,0,,64300.0,Southwest China,西安 Xi'an | 长安荟·原味陕菜
+133,偏西南地区 Southwest China,西安 Xi'an,1,唐华华邑酒店-彩丰楼中餐厅,地方菜-粤菜,4.8,4.8,4.9,4.8,14.4,1193,4.0,3,3,443,0,,14400.0,Southwest China,西安 Xi'an | 唐华华邑酒店-彩丰楼中餐厅
+134,偏西南地区 Southwest China,西安 Xi'an,1,北京厨房(SKP店),地方菜-粤菜,4.4,4.4,4.6,4.5,26.9,3785,5.0,4,4,210,0,,26900.0,Southwest China,西安 Xi'an | 北京厨房(SKP店)
+135,偏西南地区 Southwest China,西安 Xi'an,1,大董海参店(西安SKP店),地方菜-北京菜,4.5,4.5,4.7,4.6,6.15,996,3.0,1,2,504,1,,6150.0,Southwest China,西安 Xi'an | 大董海参店(西安SKP店)
+136,华中地区 Central China,长沙 Changsha,1,晴溪莊园(星沙店),地方菜-湘菜,4.6,4.4,4.8,4.6,49.0,3134,6.0,5,2,367,0,,49000.0,Central China,长沙 Changsha | 晴溪莊园(星沙店)
+137,华中地区 Central China,长沙 Changsha,1,新长福(世嘉店),地方菜-湘菜,4.8,4.8,4.8,4.9,15.4,1005,12.0,4,2,366,6,,15400.0,Central China,长沙 Changsha | 新长福(世嘉店)
+138,华中地区 Central China,长沙 Changsha,1,蓝麒麟(运达汇店),地方菜-湘菜,4.8,4.8,4.9,4.9,10.4,1436,3.0,2,1,408,0,,10400.0,Central China,长沙 Changsha | 蓝麒麟(运达汇店)
+139,华中地区 Central China,长沙 Changsha,1,墨泉峰味(润和国际广场店),地方菜-湘菜,4.5,4.5,4.7,4.7,8.7,601,3.0,1,2,440,0,,8700.0,Central China,长沙 Changsha | 墨泉峰味(润和国际广场店)
+140,华中地区 Central China,武汉 Wuhan,1,湖滨客舍(东湖店),地方菜-湖北菜,4.6,4.5,4.8,4.6,46.0,2742,13.0,4,7,379,0,,46000.0,Central China,武汉 Wuhan | 湖滨客舍(东湖店)
+141,华中地区 Central China,武汉 Wuhan,1,渔歌·武昌鱼艺术餐厅,中餐,4.8,4.8,4.9,4.8,9.2,1475,3.0,1,1,208,0,,9200.0,Central China,武汉 Wuhan | 渔歌·武昌鱼艺术餐厅
+142,华中地区 Central China,武汉 Wuhan,1,丹青宴(武汉天地店),中餐,4.6,4.5,4.8,4.7,7.17,1483,3.0,0,1,428,0,,7170.0,Central China,武汉 Wuhan | 丹青宴(武汉天地店)
+143,华中地区 Central China,武汉 Wuhan,1,粗茶淡饭·壹号餐房,地方菜-湖北菜,4.7,4.6,4.9,4.8,34.2,1188,18.0,4,7,398,15,,34200.0,Central China,武汉 Wuhan | 粗茶淡饭·壹号餐房
+144,华中地区 Central China,武汉 Wuhan,1,喜舍(江滩店),中餐,4.8,4.8,4.9,4.9,28.7,1679,3.0,1,2,317,0,,28700.0,Central China,武汉 Wuhan | 喜舍(江滩店)
+145,华南地区 South China,广州 Guangzhou,2,好酒好蔡,中餐,4.7,4.7,4.8,4.8,49.3,742,10.0,4,7,1962,0,,49300.0,South China,广州 Guangzhou | 好酒好蔡
+146,华南地区 South China,广州 Guangzhou,2,跃·Yue现代粤菜料理,中餐,4.7,4.8,4.8,4.9,67.5,1508,5.0,3,4,1500,1,,67500.0,South China,广州 Guangzhou | 跃·Yue现代粤菜料理
+147,华南地区 South China,广州 Guangzhou,2,广州瑰丽酒店·广御轩Lingnan House,地方菜-粤菜,4.6,4.7,4.8,4.5,78.0,2657,4.0,4,4,715,0,,78000.0,South China,广州 Guangzhou | 广州瑰丽酒店·广御轩Lingnan House
+148,华南地区 South China,广州 Guangzhou,2,白天鹅宾馆-玉堂春暖餐厅,地方菜-粤菜,4.5,4.5,4.5,4.5,190.3,11431,18.0,5,7,438,0,,190300.0,South China,广州 Guangzhou | 白天鹅宾馆-玉堂春暖餐厅
+149,华南地区 South China,广州 Guangzhou,1,炳胜私厨(天河东店),地方菜-粤菜,4.6,4.6,4.6,4.5,65.6,2836,17.0,4,5,775,0,,65600.0,South China,广州 Guangzhou | 炳胜私厨(天河东店)
+150,华南地区 South China,广州 Guangzhou,1,广州文华东方酒店·江-由辉师傅主理,地方菜-粤菜,4.5,4.5,4.7,4.7,90.1,4029,10.0,4,7,766,0,,90100.0,South China,广州 Guangzhou | 广州文华东方酒店·江-由辉师傅主理
+151,华南地区 South China,广州 Guangzhou,1,客·AKEN’S KITCHEN私房菜(花城大道店),中餐,4.7,4.8,4.7,4.8,35.3,621,4.0,3,3,1083,0,,35300.0,South China,广州 Guangzhou | 客·AKEN’S KITCHEN私房菜(花城大道店)
+152,华南地区 South China,广州 Guangzhou,1,潮跃,地方菜-潮汕菜,4.8,4.8,4.9,4.9,24.6,439,3.0,2,2,1934,0,,24600.0,South China,广州 Guangzhou | 潮跃
+153,华南地区 South China,广州 Guangzhou,1,CICADA 宋·湘,地方菜-湘菜,4.6,4.5,4.8,4.8,18.4,621,3.0,1,1,580,0,,18400.0,South China,广州 Guangzhou | CICADA 宋·湘
+154,华南地区 South China,广州 Guangzhou,1,广州富力君悦大酒店空中花园,地方菜-粤菜,4.5,4.5,4.7,4.7,19.5,671,15.0,4,6,741,0,,19500.0,South China,广州 Guangzhou | 广州富力君悦大酒店空中花园
+155,华南地区 South China,广州 Guangzhou,1,花城苑广府菜(侨鑫店),地方菜-粤菜,4.4,4.4,4.5,4.4,59.7,1768,5.0,4,3,215,1,,59700.0,South China,广州 Guangzhou | 花城苑广府菜(侨鑫店)
+156,华南地区 South China,广州 Guangzhou,1,炳胜公馆(珠江新城店),地方菜-粤菜,4.6,4.6,4.8,4.6,78.2,4375,13.0,4,2,613,4,,78200.0,South China,广州 Guangzhou | 炳胜公馆(珠江新城店)
+157,华南地区 South China,广州 Guangzhou,1,广州柏悦酒店·悦景轩·粤菜餐厅,地方菜-粤菜,4.6,4.6,4.8,4.6,44.4,2126,6.0,5,7,667,0,,44400.0,South China,广州 Guangzhou | 广州柏悦酒店·悦景轩·粤菜餐厅
+158,华南地区 South China,广州 Guangzhou,1,Rêver·玥,法国菜,4.4,4.3,4.6,4.6,24.4,1668,3.0,3,3,285,0,,24400.0,South China,广州 Guangzhou | Rêver·玥
+159,华南地区 South China,广州 Guangzhou,1,斯蒂勒 Stiller,西餐,4.6,4.6,4.8,4.8,28.7,771,3.0,2,2,700,0,,28700.0,South China,广州 Guangzhou | 斯蒂勒 Stiller
+160,华南地区 South China,广州 Guangzhou,1,利苑酒家(宜安广场店),地方菜-粤菜,4.5,4.5,4.5,4.5,130.9,6697,19.0,4,3,230,1,,130900.0,South China,广州 Guangzhou | 利苑酒家(宜安广场店)
+161,华南地区 South China,广州 Guangzhou,1,天水蔬食料理(东方文德店),素食,4.7,4.7,4.7,4.8,50.6,2501,7.0,4,5,288,1,,50600.0,South China,广州 Guangzhou | 天水蔬食料理(东方文德店)
+162,华南地区 South China,广州 Guangzhou,1,惠食佳(滨江大公馆店),地方菜-粤菜,4.4,4.5,4.4,4.3,280.8,15670,19.0,4,6,216,1,,280800.0,South China,广州 Guangzhou | 惠食佳(滨江大公馆店)
+163,华南地区 South China,广州 Guangzhou,1,岁集院子,地方菜-潮汕菜,4.7,4.8,4.9,4.8,37.9,692,3.0,2,2,1080,0,,37900.0,South China,广州 Guangzhou | 岁集院子
+164,华南地区 South China,顺德 shunde,1,鱼膳坊(凤城食都店),中餐,4.1,4.1,4.1,4.2,18.9,245,8.0,4,6,773,0,,18900.0,South China,顺德 shunde | 鱼膳坊(凤城食都店)
+165,华南地区 South China,顺德 shunde,1,东海海鲜酒家,地方菜-粤菜,4.1,4.1,4.0,4.1,24.7,431,18.0,0,5,424,0,,24700.0,South China,顺德 shunde | 东海海鲜酒家
+166,华南地区 South China,厦门 Xiamen,2,宴遇·福建荟馆(新景中心店),地方菜-福建菜,4.7,4.8,4.8,4.8,42.5,7507,12.0,5,2,356,0,,42500.0,South China,厦门 Xiamen | 宴遇·福建荟馆(新景中心店)
+167,华南地区 South China,厦门 Xiamen,1,CHIC1699远洋私厨,福建菜,4.8,4.8,4.8,4.8,82.5,6298,8.0,4,7,334,0,,82500.0,South China,厦门 Xiamen | CHIC1699远洋私厨
+168,华南地区 South China,厦门 Xiamen,1,雀越·Queen(滨北店),越南菜,4.3,4.4,4.7,4.4,16.1,1597,5.0,4,1,155,0,,16100.000000000002,South China,厦门 Xiamen | 雀越·Queen(滨北店)
+169,华南地区 South China,厦门 Xiamen,1,上青本港海鲜(后江埭路店),海鲜,4.4,4.5,4.3,4.4,89.6,6180,10.0,5,7,358,0,,89600.0,South China,厦门 Xiamen | 上青本港海鲜(后江埭路店)
+170,华南地区 South China,汕头 Shantou,2,潮汕味道煮海餐厅(金麟大厦店),地方菜-潮汕菜,4.4,4.5,4.5,4.4,36.2,895,10.0,3,7,1201,0,,36200.0,South China,汕头 Shantou | 潮汕味道煮海餐厅(金麟大厦店)
+171,华南地区 South China,汕头 Shantou,1,建业酒家(凤凰山路店),地方菜-粤菜,4.0,4.0,3.9,3.9,36.1,1856,19.0,0,6,378,0,,36100.0,South China,汕头 Shantou | 建业酒家(凤凰山路店)
+172,华南地区 South China,汕头 Shantou,1,潮林府私房菜,中餐,4.2,4.3,4.2,4.1,13.9,275,6.0,3,6,600,0,,13900.0,South China,汕头 Shantou | 潮林府私房菜
+173,华南地区 South China,汕头 Shantou,1,吴·现代潮菜(汕头店),中餐,4.4,4.3,4.5,4.4,8.724,107,3.0,2,3,1427,0,,8724.0,South China,汕头 Shantou | 吴·现代潮菜(汕头店)
+174,江浙地区 Jiangsu and Zhejiang region,南京 Nanjing,2,南京香格里拉·江南灶中餐厅,地方菜-淮扬菜,4.7,4.7,4.7,4.6,150.8,16342,9.0,4,7,351,0,,150800.0,Jiangsu-Zhejiang,南京 Nanjing | 南京香格里拉·江南灶中餐厅
+175,江浙地区 Jiangsu and Zhejiang region,南京 Nanjing,1,龙吟山房(青龙山庄店),地方菜-淮扬菜,4.7,4.6,4.9,4.7,82.7,2837,8.0,5,6,450,1,,82700.0,Jiangsu-Zhejiang,南京 Nanjing | 龙吟山房(青龙山庄店)
+176,江浙地区 Jiangsu and Zhejiang region,南京 Nanjing,1,紫金山院,地方菜-淮扬菜,4.7,4.7,4.9,4.7,46.3,1391,4.0,2,2,900,0,,46300.0,Jiangsu-Zhejiang,南京 Nanjing | 紫金山院
+177,江浙地区 Jiangsu and Zhejiang region,南京 Nanjing,1,金陵饭店·梅苑,地方菜-淮扬菜,4.7,4.7,4.8,4.8,84.9,5539,8.0,4,3,432,0,,84900.0,Jiangsu-Zhejiang,南京 Nanjing | 金陵饭店·梅苑
+178,江浙地区 Jiangsu and Zhejiang region,南京 Nanjing,1,鮨極KIWAMI,日本料理,4.8,4.8,4.8,4.8,37.7,921,6.0,5,4,1848,0,,37700.0,Jiangsu-Zhejiang,南京 Nanjing | 鮨極KIWAMI
+179,江浙地区 Jiangsu and Zhejiang region,杭州 Hangzhou,3,杭州西子湖四季酒店·金沙厅,地方菜-浙菜,4.7,4.6,4.8,4.7,224.9,12547,13.0,7,6,838,0,,224900.0,Jiangsu-Zhejiang,杭州 Hangzhou | 杭州西子湖四季酒店·金沙厅
+180,江浙地区 Jiangsu and Zhejiang region,杭州 Hangzhou,2,杭州柏悦酒店-悦轩中餐厅,地方菜-浙菜,4.7,4.7,4.9,4.7,59.5,4816,7.0,6,6,733,0,,59500.0,Jiangsu-Zhejiang,杭州 Hangzhou | 杭州柏悦酒店-悦轩中餐厅
+181,江浙地区 Jiangsu and Zhejiang region,杭州 Hangzhou,2,西湖国宾馆·紫薇厅,地方菜-浙菜,4.4,4.4,4.8,4.5,144.4,8432,15.0,6,7,474,0,,144400.0,Jiangsu-Zhejiang,杭州 Hangzhou | 西湖国宾馆·紫薇厅
+182,江浙地区 Jiangsu and Zhejiang region,杭州 Hangzhou,2,解香楼(八盘岭路店),中餐,4.7,4.7,4.8,4.7,144.1,4718,16.0,6,7,868,0,,144100.0,Jiangsu-Zhejiang,杭州 Hangzhou | 解香楼(八盘岭路店)
+183,江浙地区 Jiangsu and Zhejiang region,杭州 Hangzhou,2,三嚥阁 La Villa Restaurant,西餐,4.6,4.4,4.8,4.8,109.0,2190,9.0,6,7,1399,0,,109000.0,Jiangsu-Zhejiang,杭州 Hangzhou | 三嚥阁 La Villa Restaurant
+184,江浙地区 Jiangsu and Zhejiang region,杭州 Hangzhou,2,新荣记(西溪湿地店),地方菜-苏浙菜,4.7,4.7,4.9,4.8,111.1,3883,6.0,5,6,829,0,,111100.0,Jiangsu-Zhejiang,杭州 Hangzhou | 新荣记(西溪湿地店)
+185,江浙地区 Jiangsu and Zhejiang region,杭州 Hangzhou,1,杭州康莱德酒店·里安,地方菜-浙菜,4.7,4.7,4.8,4.8,42.5,2408,5.0,4,4,775,0,,42500.0,Jiangsu-Zhejiang,杭州 Hangzhou | 杭州康莱德酒店·里安
+186,江浙地区 Jiangsu and Zhejiang region,杭州 Hangzhou,1,朴竺·植物料理,素食,4.8,4.8,4.8,4.8,8.01,395,2.0,1,1,885,0,,8010.0,Jiangsu-Zhejiang,杭州 Hangzhou | 朴竺·植物料理
+187,江浙地区 Jiangsu and Zhejiang region,杭州 Hangzhou,1,暗香·Wild Yeast,中餐,4.4,4.4,4.6,4.7,44.1,844,3.0,2,3,816,0,,44100.0,Jiangsu-Zhejiang,杭州 Hangzhou | 暗香·Wild Yeast
+188,江浙地区 Jiangsu and Zhejiang region,杭州 Hangzhou,1,青岚,西餐,4.4,4.4,4.5,4.6,122.9,4186,6.0,5,5,670,0,,122900.0,Jiangsu-Zhejiang,杭州 Hangzhou | 青岚
+189,江浙地区 Jiangsu and Zhejiang region,杭州 Hangzhou,1,好酒好蔡·潮目CHIU by Howard,中餐,4.4,4.4,4.8,4.8,16.9,335,3.0,1,2,500,0,,16900.0,Jiangsu-Zhejiang,杭州 Hangzhou | 好酒好蔡·潮目CHIU by Howard
+190,江浙地区 Jiangsu and Zhejiang region,杭州 Hangzhou,1,Ambré Ciel 珀·餐厅,西餐,4.8,4.8,4.9,4.9,39.0,704,3.0,2,2,1540,0,,39000.0,Jiangsu-Zhejiang,杭州 Hangzhou | Ambré Ciel 珀·餐厅
+191,江浙地区 Jiangsu and Zhejiang region,杭州 Hangzhou,1,隐外(龙井路店),地方菜-浙菜,4.8,4.8,4.8,4.8,13.7,578,2.0,1,1,508,0,,13700.0,Jiangsu-Zhejiang,杭州 Hangzhou | 隐外(龙井路店)
+192,江浙地区 Jiangsu and Zhejiang region,杭州 Hangzhou,1,曼殊怀石料理,日本料理,4.5,4.4,4.8,4.7,61.1,1430,9.0,4,7,2211,0,食材4.7,61100.0,Jiangsu-Zhejiang,杭州 Hangzhou | 曼殊怀石料理
+193,江浙地区 Jiangsu and Zhejiang region,杭州 Hangzhou,1,桂语山房(满觉陇店),地方菜-浙菜,4.5,4.4,4.8,4.6,301.2,15092,14.0,6,7,797,0,,301200.0,Jiangsu-Zhejiang,杭州 Hangzhou | 桂语山房(满觉陇店)
+194,江浙地区 Jiangsu and Zhejiang region,杭州 Hangzhou,1,兰轩村庄食坊,地方菜-浙菜,4.4,4.4,4.4,4.4,80.9,2667,13.0,4,7,722,0,,80900.0,Jiangsu-Zhejiang,杭州 Hangzhou | 兰轩村庄食坊
+195,江浙地区 Jiangsu and Zhejiang region,宁波 Ningbo,1,美宴(槐树路店),地方菜-浙菜,4.7,4.6,4.8,4.6,28.2,2766,18.0,6,7,352,0,,28200.0,Jiangsu-Zhejiang,宁波 Ningbo | 美宴(槐树路店)
+196,江浙地区 Jiangsu and Zhejiang region,宁波 Ningbo,1,陈公馆·Champion Tower(外滩店),地方菜-浙菜,4.8,4.8,4.8,4.8,7.28,199,2.0,0,1,656,0,,7280.0,Jiangsu-Zhejiang,宁波 Ningbo | 陈公馆·Champion Tower(外滩店)
+197,江浙地区 Jiangsu and Zhejiang region,宁波 Ningbo,1,明阁,地方菜-粤菜,4.7,4.6,4.8,4.7,22.1,2042,10.0,4,7,446,0,,22100.0,Jiangsu-Zhejiang,宁波 Ningbo | 明阁
+198,江浙地区 Jiangsu and Zhejiang region,宁波 Ningbo,1,海味世家·本味餐厅(明州店),海鲜,4.7,4.8,4.8,4.8,17.2,980,6.0,4,5,386,3,,17200.0,Jiangsu-Zhejiang,宁波 Ningbo | 海味世家·本味餐厅(明州店)
+199,江浙地区 Jiangsu and Zhejiang region,宁波 Ningbo,1,宁波柏悦酒店·钱湖渔港,地方菜-浙菜,4.7,4.7,4.8,4.8,31.3,3524,11.0,5,7,559,0,,31300.0,Jiangsu-Zhejiang,宁波 Ningbo | 宁波柏悦酒店·钱湖渔港
+200,江浙地区 Jiangsu and Zhejiang region,苏州 Suzhou,1,苏州柏悦酒店·西洲轩,地方菜-淮扬菜,4.6,4.7,4.8,4.6,18.2,2552,3.0,3,3,521,0,,18200.0,Jiangsu-Zhejiang,苏州 Suzhou | 苏州柏悦酒店·西洲轩
+201,江浙地区 Jiangsu and Zhejiang region,苏州 Suzhou,1,苏州凯悦酒店·华池88中餐厅,地方菜-苏帮菜,4.4,4.4,4.6,4.5,35.5,3697,9.0,4,6,479,0,,35500.0,Jiangsu-Zhejiang,苏州 Suzhou | 苏州凯悦酒店·华池88中餐厅
+202,江浙地区 Jiangsu and Zhejiang region,苏州 Suzhou,1,金海华·悦食东方·CHAO27(洲际店),地方菜-潮汕菜,4.7,4.6,4.8,4.8,16.7,928,3.0,3,2,655,1,,16700.0,Jiangsu-Zhejiang,苏州 Suzhou | 金海华·悦食东方·CHAO27(洲际店)
+203,江浙地区 Jiangsu and Zhejiang region,苏州 Suzhou,1,江南雅厨(李公堤店),地方菜-苏浙菜,4.6,4.6,4.8,4.7,145.4,7106,5.0,7,5,267,5,,145400.0,Jiangsu-Zhejiang,苏州 Suzhou | 江南雅厨(李公堤店)
+204,江浙地区 Jiangsu and Zhejiang region,苏州 Suzhou,1,鼎膳·匠宴(高铁新城店),地方菜-苏帮菜,4.7,4.7,4.8,4.7,26.2,430,3.0,2,2,570,3,,26200.0,Jiangsu-Zhejiang,苏州 Suzhou | 鼎膳·匠宴(高铁新城店)
+205,江浙地区 Jiangsu and Zhejiang region,苏州 Suzhou,1,牡丹园·灵岩山房,中餐,4.9,4.9,4.9,4.8,5.266,223,2.0,1,1,348,0,,5266.0,Jiangsu-Zhejiang,苏州 Suzhou | 牡丹园·灵岩山房
+206,江浙地区 Jiangsu and Zhejiang region,台州 Taizhou,3,新荣记(灵湖店),地方菜-苏浙菜,4.7,4.7,4.9,4.8,59.4,5161,15.0,5,6,589,3,,59400.0,Jiangsu-Zhejiang,台州 Taizhou | 新荣记(灵湖店)
+207,江浙地区 Jiangsu and Zhejiang region,台州 Taizhou,2,新荣记(中心大道店),地方菜-苏浙菜,4.6,4.6,4.6,4.7,36.3,3620,18.0,6,7,608,3,,36300.0,Jiangsu-Zhejiang,台州 Taizhou | 新荣记(中心大道店)
+208,江浙地区 Jiangsu and Zhejiang region,台州 Taizhou,1,刻龙壹号(腾达中心店),,4.8,4.8,4.8,4.8,1.211,179,1.5,0,1,299,0,,1211.0,Jiangsu-Zhejiang,台州 Taizhou | 刻龙壹号(腾达中心店)
+209,江浙地区 Jiangsu and Zhejiang region,台州 Taizhou,1,老扁酒家,地方菜-苏浙菜,4.4,4.4,4.4,4.3,63.2,3764,13.0,3,7,239,0,,63200.0,Jiangsu-Zhejiang,台州 Taizhou | 老扁酒家
+210,江浙地区 Jiangsu and Zhejiang region,无锡 Wuxi,1,贰拾壹.show(日航饭店),地方菜-苏帮菜,4.5,4.5,4.8,4.7,12.6,638,5.0,2,2,380,2,,12600.0,Jiangsu-Zhejiang,无锡 Wuxi | 贰拾壹.show(日航饭店)
+211,江浙地区 Jiangsu and Zhejiang region,无锡 Wuxi,1,The V泽惟·低温慢煮料理,西餐,4.8,4.8,4.8,4.9,27.3,1929,7.0,4,1,754,0,,27300.0,Jiangsu-Zhejiang,无锡 Wuxi | The V泽惟·低温慢煮料理
+212,江浙地区 Jiangsu and Zhejiang region,无锡 Wuxi,1,无锡苏宁凯悦酒店-悦府65中餐厅,地方菜-苏帮菜,4.4,4.4,4.8,4.4,8.553,2066,8.0,2,2,408,0,,8553.0,Jiangsu-Zhejiang,无锡 Wuxi | 无锡苏宁凯悦酒店-悦府65中餐厅
+213,江浙地区 Jiangsu and Zhejiang region,无锡 Wuxi,1,君来湖滨饭店·渔餐厅,地方菜-苏帮菜,4.7,4.6,4.8,4.8,4.933,417,9.0,3,2,658,0,,4933.0,Jiangsu-Zhejiang,无锡 Wuxi | 君来湖滨饭店·渔餐厅
+214,江浙地区 Jiangsu and Zhejiang region,扬州 Yangzhou,2,趣园茶社(长春路店),地方菜-淮扬菜,4.2,4.1,4.4,4.2,233.5,22403,15.0,6,7,160,0,,233500.0,Jiangsu-Zhejiang,扬州 Yangzhou | 趣园茶社(长春路店)
+215,江浙地区 Jiangsu and Zhejiang region,扬州 Yangzhou,1,山·餐厅,地方菜-淮扬菜,4.4,4.4,4.6,4.5,33.7,1366,3.0,3,2,387,0,,33700.0,Jiangsu-Zhejiang,扬州 Yangzhou | 山·餐厅
+216,华南地区 South China,深圳 Shenzhen,1,Ensue,西餐,4.5,4.4,4.8,4.8,57.5,1046,4.0,4,4,2459,0,,57500.0,South China,深圳 Shenzhen | Ensue
+217,华南地区 South China,深圳 Shenzhen,1,君悦酒店·主席楼·粤府·点心粤菜,地方菜-粤菜,4.9,4.9,4.9,4.9,10.5,1092,14.0,4,1,667,0,,10500.0,South China,深圳 Shenzhen | 君悦酒店·主席楼·粤府·点心粤菜
+218,华南地区 South China,深圳 Shenzhen,1,鮨一日本料理(大中华店),日本料理,4.8,4.8,4.7,4.8,27.6,1169,7.0,5,6,1277,0,,27600.0,South China,深圳 Shenzhen | 鮨一日本料理(大中华店)
+219,华南地区 South China,深圳 Shenzhen,1,珍庭潮州菜(卓悦中心店),地方菜-潮汕菜,4.7,4.6,4.8,4.8,26.3,1023,4.0,3,2,887,0,,26300.0,South China,深圳 Shenzhen | 珍庭潮州菜(卓悦中心店)
+220,华南地区 South China,深圳 Shenzhen,1,天屿水·茶蔬(卓悦中心店),素食,4.7,4.6,4.8,4.8,16.2,438,2.0,1,1,532,0,,16200.0,South China,深圳 Shenzhen | 天屿水·茶蔬(卓悦中心店)
+221,华南地区 South China,深圳 Shenzhen,1,嘉苑饭店,地方菜-潮汕菜,4.4,4.4,4.8,4.6,42.0,1285,6.0,4,5,953,0,,42000.0,South China,深圳 Shenzhen | 嘉苑饭店
+222,华南地区 South China,深圳 Shenzhen,1,新荣记(平安金融中心店),地方菜-苏浙菜,4.8,4.8,4.8,4.8,59.8,2572,4.0,4,3,878,0,,59800.0,South China,深圳 Shenzhen | 新荣记(平安金融中心店)
+223,华南地区 South China,深圳 Shenzhen,1,AVANT,西餐,4.9,4.9,4.8,4.9,39.5,769,3.0,3,2,2418,0,,39500.0,South China,深圳 Shenzhen | AVANT
+224,华南地区 South China,深圳 Shenzhen,1,至正潮菜(华侨城店),地方菜-潮汕菜,4.9,4.8,4.8,4.8,18.0,920,3.0,3,2,680,2,,18000.0,South China,深圳 Shenzhen | 至正潮菜(华侨城店)
+225,华南地区 South China,深圳 Shenzhen,1,吴·现代潮菜(深圳店),地方菜-潮汕菜,4.8,4.8,4.8,4.8,18.6,366,3.0,2,2,1406,0,,18600.0,South China,深圳 Shenzhen | 吴·现代潮菜(深圳店)
+226,华南地区 South China,深圳 Shenzhen,1,粤海荟,地方菜-潮汕菜,4.7,4.8,4.7,4.7,17.4,372,4.0,3,3,1000,0,,17400.0,South China,深圳 Shenzhen | 粤海荟
+227,华南地区 South China,深圳 Shenzhen,1,Stone Sal 言盐西餐厅(金地威新中心店),西餐,4.8,4.8,4.9,4.9,15.6,415,2.0,1,1,1219,0,,15600.0,South China,深圳 Shenzhen | Stone Sal 言盐西餐厅(金地威新中心店)
+228,华南地区 South China,深圳 Shenzhen,1,Voisin Organique,西餐,4.6,4.5,4.6,4.6,58.7,1052,6.0,4,5,1658,0,,58700.0,South China,深圳 Shenzhen | Voisin Organique
+229,华南地区 South China,深圳 Shenzhen,1,晴空·日本料理(万象城店),日本料理,4.8,4.8,4.8,4.8,22.4,1106,5.0,2,2,2292,0,食材评分4.8,22400.0,South China,深圳 Shenzhen | 晴空·日本料理(万象城店)
+230,华南地区 South China,深圳 Shenzhen,1,齐武,日本料理,4.8,4.8,4.7,4.6,16.9,375,3.0,2,2,1929,0,食材评分4.8,16900.0,South China,深圳 Shenzhen | 齐武
+231,华南地区 South China,深圳 Shenzhen,1,莱佛士酒店·云璟 Yun Jing,地方菜-粤菜,4.8,4.8,4.9,4.8,40.2,2079,5.0,4,4,1309,0,,40200.0,South China,深圳 Shenzhen | 莱佛士酒店·云璟 Yun Jing
+232,华南地区 South China,深圳 Shenzhen,1,水岸十里·江海时鲜(万象前海店),地方菜-浙菜,4.8,4.8,4.9,4.9,18.7,1019,3.0,2,1,453,0,,18700.0,South China,深圳 Shenzhen | 水岸十里·江海时鲜(万象前海店)
+233,华南地区 South China,江西 Jiangxi,1,春天来了·雅集,地方菜-赣菜,4.8,4.8,4.8,4.8,2.43,686,3.0,1,1,176,0,,2430.0,South China,江西 Jiangxi | 春天来了·雅集
+234,华南地区 South China,江西 Jiangxi,1,牡丹亭(新天地店),地方菜-赣菜,4.7,4.6,4.8,4.7,4.569,579,2.0,1,1,347,2,,4569.0,South China,江西 Jiangxi | 牡丹亭(新天地店)
