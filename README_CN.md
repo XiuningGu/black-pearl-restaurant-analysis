@@ -4,9 +4,7 @@
 
 ## 项目定位
 
-本项目从数据整理开始，依次完成统计分析、结果输出和报告撰写。仓库也按“数据—分析—结果—报告”的顺序组织。
-
-最终报告：[`report/black_pearl_restaurant_analysis_report.pdf`](report/black_pearl_restaurant_analysis_report.pdf)
+本项目从数据整理开始，依次完成数据清洗、统计分析和结果输出。仓库按“数据—分析—结果”的顺序组织。
 
 ## 下载数据
 
