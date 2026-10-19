@@ -4,7 +4,9 @@
 
 ## 项目定位
 
-数据整理和统计分析先完成，文字报告后形成。本仓库只保留数据、代码、结果和方法说明。
+本项目从数据整理开始，依次完成统计分析、结果输出和报告撰写。仓库也按“数据—分析—结果—报告”的顺序组织。
+
+最终报告：[`report/black_pearl_restaurant_analysis_report.pdf`](report/black_pearl_restaurant_analysis_report.pdf)
 
 ## 下载数据
 
@@ -18,7 +20,7 @@
 
 数据来源、覆盖范围和使用注意事项见 [`DATASET_CARD.md`](DATASET_CARD.md)，字段定义见 [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md)。
 
-## 主要结果
+## 核心结果
 
 总评分对口味、环境和服务评分的 OLS 模型为：
 

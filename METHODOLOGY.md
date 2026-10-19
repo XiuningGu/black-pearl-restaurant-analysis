@@ -30,6 +30,6 @@ The contingency table is sparse: 97.1% of expected cells are below five. Cramér
 
 Regional price distributions are compared with Kruskal–Wallis testing. Pairwise Mann–Whitney tests use Holm correction. The three-diamond group has only five observations, so the project reports descriptive statistics and a one-way ANOVA but does not train a multiclass prediction model.
 
-## Reproducibility
+## Running and validation
 
 `src/analysis.py` rebuilds the public CSV, internal cleaned CSV, result tables, figures and output-free notebook from the preserved workbook. Randomized analysis uses seed `20261018` and 5,000 permutations. Dependency versions are pinned in `requirements.txt`.

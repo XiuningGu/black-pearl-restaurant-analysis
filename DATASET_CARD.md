@@ -45,4 +45,4 @@ The canonical release is `data/public/black_pearl_restaurants.csv`. The Excel fi
 
 ## Responsible use
 
-Use the dataset for learning, portfolio review and reproducible analysis with clear attribution to this repository and to Dianping/Meituan as the underlying public-page source. This repository does not claim ownership of platform content or grant a separate license for commercial redistribution. Users should review applicable platform terms and verify records before publication, operational use or commercial reuse.
+Use the dataset for learning, portfolio review and independent analysis with clear attribution to this repository and to Dianping/Meituan as the underlying public-page source. This repository does not claim ownership of platform content or grant a separate license for commercial redistribution. Users should review applicable platform terms and verify records before publication, operational use or commercial reuse.

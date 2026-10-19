@@ -4,7 +4,9 @@ Python analysis of 233 Black Pearl-listed restaurants using restaurant informati
 
 [中文说明](README_CN.md)
 
-The analysis predates the later written report. This repository contains the dataset, code, results and method notes for the project itself.
+The dataset was compiled and analyzed before the final report was written. This repository follows that project sequence: data, analysis, results and report.
+
+Final report: [`report/black_pearl_restaurant_analysis_report.pdf`](report/black_pearl_restaurant_analysis_report.pdf)
 
 ## Download the dataset
 
@@ -56,8 +58,9 @@ data/public/               Standalone CSV and Excel dataset
 figures/                   Generated charts
 notebooks/                 Runnable analysis notebook
 results/                   Statistical tables and quality checks
+report/                    Final report written after the analysis
 src/analysis.py            End-to-end analysis pipeline
-tests/                     Reproducibility checks
+tests/                     Validation tests
 DATASET_CARD.md             Provenance and responsible-use notes
 DATA_DICTIONARY.md          Field definitions
 METHODOLOGY.md              Statistical decisions and limitations

@@ -607,7 +607,7 @@ def _build_notebook(project_root: Path) -> None:
             "descriptive"
         ),
         _markdown_cell(
-            "## 3. Sample-version reconciliation\n\n"
+            "## 3. Historical sample check\n\n"
             "This quality-control table documents the difference between the historical "
             "153-row Excel output and the final 233-row dataset."
         ),

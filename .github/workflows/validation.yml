@@ -1,4 +1,4 @@
-name: Reproducibility checks
+name: Validation checks
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
           jupyter nbconvert --to notebook --execute
           notebooks/black_pearl_analysis.ipynb
           --output /tmp/black_pearl_analysis.executed.ipynb
-      - name: Run reproducibility checks
+      - name: Run validation tests
         run: python -m unittest discover -s tests -v
       - name: Confirm deterministic generated files are committed
         run: >-
