@@ -2,10 +2,11 @@ metric,value
 complete_observations,232.0
 chi_squared,439.8724160770977
 degrees_freedom,140.0
-asymptotic_p_value,1.0722608718246259e-32
+asymptotic_p_value,1.072260871824656e-32
 cramers_v,0.6157924639739862
 expected_cells,174.0
 expected_cells_below_5,169.0
 expected_cells_below_5_pct,97.12643678160919
 permutations,5000.0
+permutation_exceedances,0.0
 permutation_p_value,0.0001999600079984003

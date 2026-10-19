@@ -1,37 +1,60 @@
 # 黑珍珠餐厅数据分析
 
-本项目使用最终的233家餐厅数据，复现原研究报告的主要统计结果，并对原分析中的样本版本、系数口径和检验条件进行审查。
+本项目分析233家黑珍珠上榜餐厅。餐厅信息和公开评分字段由人工从大众点评/美团页面整理。
+
+## 项目定位
+
+本项目从数据整理开始，依次完成统计分析、结果输出和报告撰写。仓库也按“数据—分析—结果—报告”的顺序组织。
+
+最终报告：[`report/black_pearl_restaurant_analysis_report.pdf`](report/black_pearl_restaurant_analysis_report.pdf)
+
+## 下载数据
+
+| 文件 | 用途 |
+|---|---|
+| [`data/public/black_pearl_restaurants.csv`](data/public/black_pearl_restaurants.csv) | 标准分析版，适合 Python、R 和 SQL |
+| [`data/public/black_pearl_restaurants.xlsx`](data/public/black_pearl_restaurants.xlsx) | 单工作表 Excel 版，适合直接查看和筛选 |
+| [`data/raw/black_pearl_2024.xlsx`](data/raw/black_pearl_2024.xlsx) | 原始工作簿，包含历史 Excel 统计输出 |
+
+公开版每行一家餐厅，包含稳定 ID、规范化中英文地区和城市、原始标签，以及拆分后的菜系字段。无标题的“食材评分”备注已转为数值字段；`hello` 列未保留，因为它等于收藏量除以1,000。
+
+数据来源、覆盖范围和使用注意事项见 [`DATASET_CARD.md`](DATASET_CARD.md)，字段定义见 [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md)。
 
 ## 核心结果
+
+总评分对口味、环境和服务评分的 OLS 模型为：
 
 $$
 \widehat{总评分}=0.1817+0.6174(口味)+0.1963(环境)+0.1436(服务)
 $$
 
 - $R^2=0.8925$，调整后 $R^2=0.8911$。
-- 原论文中的0.617、0.196、0.144是非标准化系数，并非标准化系数。
-- 真正的标准化系数分别约为0.676、0.189和0.151。
-- 旧Excel回归页只使用了前153条记录；论文最终公式使用了全部233条记录。
-- 使用普通标准误时三个评分维度均显著；使用HC3稳健标准误后，服务评分的 $p=0.051$，属于边缘显著。
+- 标准化系数约为0.676、0.189和0.151。
+- 使用 HC3 稳健标准误后，口味和环境仍显著；服务评分为边缘显著（$p=0.051$）。
+- VIF 介于2.54和4.38之间。
+- 奖项次数的配对 Wilcoxon 检验 $p=1.51\times10^{-5}$，Spearman $\rho=0.709$。
+- 地区与菜系的 Cramér's V=0.616，但97.1%的期望频数小于5。5,000次置换中没有超过观测统计量的结果，因此 $1/5001$ 只是蒙特卡洛分辨率下界，不是精确总体 p 值。
+- 钻级样本不平衡：一钻198家、二钻30家、三钻5家。
 
-## 方法修正
+这些结果描述的是手工样本中的关联，不能解释为因果关系，也不能据此声称还原了黑珍珠内部评选权重。
 
-- 奖项次数的Wilcoxon检验和Spearman相关分析均已复现。
-- 原论文的 Cohen's $d=0.246$ 使用了不适合配对数据的合并标准差；配对 $d_z$ 的绝对值约为0.295。
-- 地区与菜系的 Cramér's V=0.616 可以复现，但97.1%的期望频数小于5，因此补充了固定随机种子的置换检验。
-- 钻级样本极度不平衡：一钻198家、二钻30家、三钻5家，不适合直接训练普通三分类模型。
-- 数据中有1条菜系缺失，以及3组同城同名记录需要人工确认。
+## 数据注意事项
 
-## 项目定位
+- 1条记录缺失菜系。
+- 有3组“同城同名”键重复，保留待人工确认，没有静默删除。
+- 城市字段中有2条 `江西 Jiangxi`，它是省级标签；公开版保留并明确说明。
+- 精确采集日期和逐条来源链接没有留存，本项目不会补写或猜测。
 
-本项目分析的是“黑珍珠上榜餐厅的大众平台评分关系”，不能据此声称破解了黑珍珠评委的内部评选权重。
+## 运行
 
-完整分析见：`notebooks/black_pearl_python_replication.ipynb`。
-
-运行：
+建议使用 Python 3.12：
 
 ```bash
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 python src/analysis.py
+python -m unittest discover -s tests -v
 ```
 
+完整的可运行分析见 `notebooks/black_pearl_analysis.ipynb`。

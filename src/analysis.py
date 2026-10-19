@@ -1,12 +1,12 @@
-"""Reproduce and audit the 2024 Black Pearl restaurant analysis.
+"""Build the Black Pearl restaurant dataset and run the analysis.
 
 Run from the repository root:
 
     python src/analysis.py
 
-The script cleans the supplied workbook, reproduces the paper's main results,
-adds diagnostic checks, writes tables, draws figures, and refreshes the
-portfolio notebook.
+The script preserves the supplied workbook as source material, creates clean
+analysis and public CSV files, runs the statistical workflow, writes tables,
+draws figures, and refreshes the portfolio notebook.
 """
 
 from __future__ import annotations
@@ -52,6 +52,41 @@ REGION_LABELS = {
     "江浙地区 Jiangsu and Zhejiang region": "Jiangsu-Zhejiang",
 }
 
+REGION_CN = {
+    "上海 Shanghai": "上海",
+    "华北地区 North China": "华北",
+    "偏西南地区 Southwest China": "西南",
+    "华中地区 Central China": "华中",
+    "华南地区 South China": "华南",
+    "江浙地区 Jiangsu and Zhejiang region": "江浙",
+}
+
+CITY_LABELS = {
+    "上海 Shanghai": ("上海", "Shanghai"),
+    "北京 Beijing": ("北京", "Beijing"),
+    "成都 Chengdu": ("成都", "Chengdu"),
+    "广州 Guangzhou": ("广州", "Guangzhou"),
+    "深圳 Shenzhen": ("深圳", "Shenzhen"),
+    "杭州 Hangzhou": ("杭州", "Hangzhou"),
+    "苏州 Suzhou": ("苏州", "Suzhou"),
+    "西安 Xi'an": ("西安", "Xi'an"),
+    "宁波 Ningbo": ("宁波", "Ningbo"),
+    "南京 Nanjing": ("南京", "Nanjing"),
+    "武汉 Wuhan": ("武汉", "Wuhan"),
+    "重庆 Chongqing": ("重庆", "Chongqing"),
+    "无锡 Wuxi": ("无锡", "Wuxi"),
+    "厦门 Xiamen": ("厦门", "Xiamen"),
+    "汕头 Shantou": ("汕头", "Shantou"),
+    "长沙 Changsha": ("长沙", "Changsha"),
+    "台州 Taizhou": ("台州", "Taizhou"),
+    "昆明 Kunming": ("昆明", "Kunming"),
+    "扬州 Yangzhou": ("扬州", "Yangzhou"),
+    "顺德 shunde": ("顺德", "Shunde"),
+    "天津 Tianjing": ("天津", "Tianjin"),
+    "江西 Jiangxi": ("江西", "Jiangxi"),
+    "济南 Jinan": ("济南", "Jinan"),
+}
+
 
 def clean_data(raw_path: Path) -> pd.DataFrame:
     """Load the source workbook and apply transparent column-level cleaning."""
@@ -82,6 +117,47 @@ def clean_data(raw_path: Path) -> pd.DataFrame:
         raise ValueError("The favourites_thousands source field is inconsistent.")
 
     return data
+
+
+def build_public_dataset(data: pd.DataFrame) -> pd.DataFrame:
+    """Create a flat, analysis-ready table without altering source labels."""
+    unknown_cities = sorted(set(data["city"].dropna()) - set(CITY_LABELS))
+    if unknown_cities:
+        raise ValueError(f"Unmapped city labels: {unknown_cities}")
+
+    public = pd.DataFrame(index=data.index)
+    public["restaurant_id"] = [f"BP-{index:04d}" for index in range(1, len(data) + 1)]
+    public["source_row"] = data["source_row"]
+    public["region_cn"] = data["region"].map(REGION_CN)
+    public["region_en"] = data["region"].map(REGION_LABELS)
+    public["region_source"] = data["region"]
+    public["city_cn"] = data["city"].map(lambda value: CITY_LABELS[value][0])
+    public["city_en"] = data["city"].map(lambda value: CITY_LABELS[value][1])
+    public["city_source"] = data["city"]
+    public["diamond_level"] = data["diamond_level"]
+    public["restaurant_name"] = data["restaurant_name"]
+    public["cuisine_source"] = data["cuisine"]
+    cuisine_parts = data["cuisine"].fillna("").str.split("-", n=1, expand=True)
+    public["cuisine_category_cn"] = cuisine_parts[0].replace("", pd.NA)
+    public["cuisine_detail_cn"] = (
+        cuisine_parts[1] if cuisine_parts.shape[1] > 1 else pd.Series(pd.NA, index=data.index)
+    )
+    public["total_score"] = data["total_score"]
+    public["taste_score"] = data["taste_score"]
+    public["environment_score"] = data["environment_score"]
+    public["service_score"] = data["service_score"]
+    public["review_count"] = data["review_count"]
+    public["favourites_count"] = data["favourites_count"].round().astype("int64")
+    public["years_open"] = data["years_open"]
+    public["annual_star_count"] = data["annual_star_count"]
+    public["black_pearl_listing_count"] = data["black_pearl_listing_count"]
+    public["avg_price_cny"] = data["avg_price_cny"]
+    public["branch_count"] = data["branch_count"]
+    public["ingredient_score"] = pd.to_numeric(
+        data["notes"].astype("string").str.extract(r"(\d+(?:\.\d+)?)", expand=False),
+        errors="coerce",
+    )
+    return public
 
 
 def _ols_core(y: np.ndarray, x: np.ndarray) -> dict:
@@ -225,7 +301,7 @@ def award_tests(data: pd.DataFrame) -> pd.DataFrame:
     )
     paired_cohens_dz = differences.mean() / differences.std(ddof=1)
     pooled_sd = math.sqrt((annual.var(ddof=1) + black_pearl.var(ddof=1)) / 2)
-    paper_style_d = (annual.mean() - black_pearl.mean()) / pooled_sd
+    unpaired_pooled_d = (annual.mean() - black_pearl.mean()) / pooled_sd
 
     return pd.DataFrame(
         [
@@ -240,8 +316,8 @@ def award_tests(data: pd.DataFrame) -> pd.DataFrame:
             {"metric": "spearman_p_value", "value": spearman.pvalue},
             {"metric": "paired_cohens_dz", "value": paired_cohens_dz},
             {
-                "metric": "paper_style_pooled_d_not_paired",
-                "value": paper_style_d,
+                "metric": "unpaired_pooled_d_for_comparison",
+                "value": unpaired_pooled_d,
             },
         ]
     )
@@ -289,6 +365,7 @@ def cuisine_region_test(
                 "value": float((expected < 5).mean() * 100),
             },
             {"metric": "permutations", "value": permutations},
+            {"metric": "permutation_exceedances", "value": exceedances},
             {"metric": "permutation_p_value", "value": permutation_p},
         ]
     )
@@ -326,23 +403,29 @@ def region_price_tests(data: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
     pairwise = pd.DataFrame(pairwise_rows)
     pairwise["p_value_holm"] = holm_adjust(pairwise["p_value"].to_numpy())
     pairwise["significant_0_05"] = pairwise["p_value_holm"] < 0.05
-    return omnibus, pairwise.sort_values("p_value_holm").reset_index(drop=True)
+    return omnibus, pairwise.sort_values(
+        ["p_value_holm", "region_1", "region_2"], kind="mergesort"
+    ).reset_index(drop=True)
 
 
-def regression_diagnostics(data: pd.DataFrame, fit: dict) -> pd.DataFrame:
+def regression_diagnostics(
+    data: pd.DataFrame, fit: dict, predictor_columns: list[str]
+) -> pd.DataFrame:
     residuals = fit["residuals"]
-    fitted = fit["fitted"]
     shapiro = stats.shapiro(residuals)
-    auxiliary = _ols_core(residuals**2, fitted[:, None])
-    breusch_pagan_lm = len(residuals) * auxiliary["r_squared"]
-    breusch_pagan_p = stats.chi2.sf(breusch_pagan_lm, 1)
+    model_data = data[predictor_columns].dropna()
+    auxiliary = _ols_core(residuals**2, model_data.to_numpy())
+    koenker_bp_lm = len(residuals) * auxiliary["r_squared"]
+    koenker_bp_df = len(predictor_columns)
+    koenker_bp_p = stats.chi2.sf(koenker_bp_lm, koenker_bp_df)
     cooks_threshold = 4 / len(residuals)
     return pd.DataFrame(
         [
             {"metric": "shapiro_w", "value": shapiro.statistic},
             {"metric": "shapiro_p_value", "value": shapiro.pvalue},
-            {"metric": "breusch_pagan_lm", "value": breusch_pagan_lm},
-            {"metric": "breusch_pagan_p_value", "value": breusch_pagan_p},
+            {"metric": "koenker_breusch_pagan_lm", "value": koenker_bp_lm},
+            {"metric": "koenker_breusch_pagan_df", "value": koenker_bp_df},
+            {"metric": "koenker_breusch_pagan_p_value", "value": koenker_bp_p},
             {"metric": "cooks_distance_threshold_4_over_n", "value": cooks_threshold},
             {
                 "metric": "observations_above_cooks_threshold",
@@ -463,42 +546,31 @@ def _write_figures(data: pd.DataFrame, regression: pd.DataFrame, fit: dict, figu
     plt.close(fig)
 
 
-def _stream_output(text: str) -> dict:
-    return {"name": "stdout", "output_type": "stream", "text": text.rstrip() + "\n"}
-
-
 def _markdown_cell(source: str) -> dict:
     return {"cell_type": "markdown", "metadata": {}, "source": source.splitlines(keepends=True)}
 
 
-def _code_cell(source: str, execution_count: int, output: str | None = None) -> dict:
-    outputs = [] if output is None else [_stream_output(output)]
+def _code_cell(source: str) -> dict:
     return {
         "cell_type": "code",
-        "execution_count": execution_count,
+        "execution_count": None,
         "metadata": {},
-        "outputs": outputs,
+        "outputs": [],
         "source": source.splitlines(keepends=True),
     }
 
 
-def _build_notebook(project_root: Path, outputs: dict[str, pd.DataFrame]) -> None:
-    notebook_path = project_root / "notebooks" / "black_pearl_python_replication.ipynb"
-    regression_comparison = outputs["regression_comparison"].round(6).to_string(index=False)
-    regression_table = outputs["regression"].round(6).to_string(index=False)
-    beta_table = outputs["standardized_betas"].round(6).to_string(index=False)
-    vif = outputs["vif"].round(4).to_string(index=False)
-    awards = outputs["awards"].round(6).to_string(index=False)
-    cuisine_region = outputs["cuisine_region"].round(6).to_string(index=False)
-    region_omnibus = outputs["region_omnibus"].round(6).to_string(index=False)
-    diamond = outputs["diamond_summary"].round(4).to_string(index=False)
-
+def _build_notebook(project_root: Path) -> None:
+    """Write a clean notebook whose outputs are produced only when it is run."""
+    notebook_path = project_root / "notebooks" / "black_pearl_analysis.ipynb"
+    notebook_path.parent.mkdir(parents=True, exist_ok=True)
     cells = [
         _markdown_cell(
-            "# Black Pearl Restaurant Analysis: Python Replication\n\n"
-            "This notebook reproduces the core statistical results in the original 2024 report "
-            "using the final 233-restaurant dataset. It also audits sample versions, effect-size "
-            "definitions, model assumptions, and claims that the original report could not support."
+            "# Black Pearl Restaurant Data Analysis\n\n"
+            "This notebook analyzes a manually compiled dataset of 233 restaurants listed in the "
+            "Black Pearl Restaurant Guide. It generates all derived tables and figures from the "
+            "preserved source workbook. Run the cells in order; committed outputs are intentionally "
+            "cleared so they cannot be mistaken for executed results."
         ),
         _code_cell(
             "from pathlib import Path\n"
@@ -509,73 +581,62 @@ def _build_notebook(project_root: Path, outputs: dict[str, pd.DataFrame]) -> Non
             "    ROOT = ROOT.parent\n"
             "sys.path.insert(0, str(ROOT))\n"
             "from src.analysis import run_analysis\n\n"
-            "# Rebuild every result and figure from the source workbook.\n"
+            "# Generate every result and figure from the source workbook.\n"
             "artifacts = run_analysis(ROOT, build_notebook=False)\n"
-            "data = pd.read_csv(ROOT / 'data/processed/black_pearl_clean.csv')\n"
-            "print(f'Loaded {len(data)} restaurants and {len(data.columns)} cleaned fields.')",
-            1,
-            "Loaded 233 restaurants and 21 cleaned fields.",
+            "data = pd.read_csv(ROOT / 'data/public/black_pearl_restaurants.csv')\n"
+            "print(f'Loaded {len(data)} restaurants and {len(data.columns)} public fields.')"
         ),
         _markdown_cell(
             "## 1. Data audit\n\n"
-            "The final source contains 233 restaurants. The workbook's old regression-output "
-            "sheets used only the first 153 observations, while the coefficients printed in the "
-            "paper came from all 233 observations. The `hello` field is exactly favourites divided "
-            "by 1,000 and is retained only for provenance. Three city-name keys require manual review."
+            "The source workbook contains 233 restaurant records. Its other worksheets contain "
+            "historical Excel outputs; one regression worksheet used only the first 153 records. "
+            "The analysis below uses all 233 records. The public dataset removes the redundant "
+            "`hello` field and retains source labels alongside normalized geography fields."
         ),
         _code_cell(
             "quality = pd.read_csv(ROOT / 'results/data_quality_summary.csv')\n"
-            "print(quality.to_string(index=False))",
-            2,
-            outputs["data_quality"].to_string(index=False),
+            "quality"
         ),
         _markdown_cell(
             "## 2. Descriptive results\n\n"
-            "The published means for environment score (4.697), favourites (68,135), reviews "
-            "(3,043), and years open (7.08) all match the 233-row dataset.\n\n"
+            "Summary statistics are calculated from the 233-row analysis sample.\n\n"
             "![Score distributions](../figures/score_distributions.png)"
         ),
+        _code_cell(
+            "descriptive = pd.read_csv(ROOT / 'results/descriptive_statistics.csv')\n"
+            "descriptive"
+        ),
         _markdown_cell(
-            "## 3. Sample-version reconciliation\n\n"
-            "The table below explains why the historical workbook output and the final paper differ."
+            "## 3. Historical sample check\n\n"
+            "This quality-control table documents the difference between the historical "
+            "153-row Excel output and the final 233-row dataset."
         ),
         _code_cell(
             "comparison = pd.read_csv(ROOT / 'results/regression_sample_comparison.csv')\n"
-            "print(comparison.round(6).to_string(index=False))",
-            3,
-            regression_comparison,
+            "comparison.round(6)"
         ),
         _markdown_cell(
-            "## 4. Core OLS replication\n\n"
+            "## 4. Core OLS analysis\n\n"
             "The response is the public platform total score. Predictors are the public taste, "
-            "environment, and service subscores. These estimates reproduce the formula in the paper. "
-            "They do **not** reveal the confidential Black Pearl jury selection weights."
+            "environment, and service subscores. The model describes association among public rating "
+            "fields; it does **not** reveal confidential Black Pearl jury selection weights."
         ),
         _code_cell(
             "regression = pd.read_csv(ROOT / 'results/core_regression.csv')\n"
-            "print(regression.round(6).to_string(index=False))",
-            4,
-            regression_table,
+            "regression.round(6)"
         ),
         _markdown_cell(
             "The fitted equation is:\n\n"
             "$$\\widehat{TotalScore}=0.1817+0.6174(Taste)+0.1963(Environment)+0.1436(Service)$$\n\n"
-            "Model $R^2=0.8925$ and adjusted $R^2=0.8911$. The paper called the three slopes "
-            "standardized coefficients, but they are unstandardized slopes.\n\n"
+            "Model $R^2=0.8925$ and adjusted $R^2=0.8911$. These slopes are unstandardized; "
+            "standardized coefficients are reported separately.\n\n"
             "![Regression coefficients](../figures/regression_coefficients.png)"
         ),
         _code_cell(
             "betas = pd.read_csv(ROOT / 'results/standardized_betas.csv')\n"
             "vif = pd.read_csv(ROOT / 'results/vif.csv')\n"
-            "print('Standardized coefficients')\n"
-            "print(betas.round(6).to_string(index=False))\n"
-            "print('\\nVariance inflation factors')\n"
-            "print(vif.round(4).to_string(index=False))",
-            5,
-            "Standardized coefficients\n"
-            + beta_table
-            + "\n\nVariance inflation factors\n"
-            + vif,
+            "display(betas.round(6))\n"
+            "display(vif.round(4))"
         ),
         _markdown_cell(
             "The VIF values are below 5, although service has the highest shared variance. "
@@ -586,58 +647,46 @@ def _build_notebook(project_root: Path, outputs: dict[str, pd.DataFrame]) -> Non
         _markdown_cell("## 5. Award-count analysis"),
         _code_cell(
             "awards = pd.read_csv(ROOT / 'results/award_tests.csv')\n"
-            "print(awards.round(6).to_string(index=False))",
-            6,
-            awards,
+            "awards.round(6)"
         ),
         _markdown_cell(
             "The paired Wilcoxon test is significant and the counts are strongly associated "
-            "(Spearman $\\rho=0.709$). The paper's $d=0.246$ can be reproduced only by using an "
-            "independent-samples pooled standard deviation; paired $d_z$ is about 0.295 in magnitude.\n\n"
+            "(Spearman $\\rho=0.709$). Paired $d_z$ is about 0.295 in magnitude.\n\n"
             "![Award relationship](../figures/award_relationship.png)"
         ),
         _markdown_cell("## 6. Cuisine and region"),
         _code_cell(
             "cuisine_region = pd.read_csv(ROOT / 'results/cuisine_region_test.csv')\n"
-            "print(cuisine_region.round(6).to_string(index=False))",
-            7,
-            cuisine_region,
+            "cuisine_region.round(6)"
         ),
         _markdown_cell(
-            "Cramér's V reproduces the paper (about 0.616), but 97.1% of expected cells are below "
-            "5. The asymptotic chi-square p-value should not be trusted on its own, so this project "
-            "adds a fixed-seed permutation test. Cuisine names are also geographically encoded, "
-            "which makes part of the association structural rather than surprising."
+            "Cramér's V is about 0.616, but 97.1% of expected cells are below 5. The asymptotic "
+            "chi-square p-value should not be trusted on its own, so the analysis adds a fixed-seed "
+            "permutation test. With zero exceedances in 5,000 draws, $1/5001$ is the Monte Carlo "
+            "resolution bound, not an exact population p-value."
         ),
         _markdown_cell("## 7. Regional price differences and diamond-level limitation"),
         _code_cell(
             "regional = pd.read_csv(ROOT / 'results/region_price_omnibus.csv')\n"
             "diamond = pd.read_csv(ROOT / 'results/diamond_summary.csv')\n"
-            "print('Regional price test')\n"
-            "print(regional.round(6).to_string(index=False))\n"
-            "print('\\nDiamond-level summary')\n"
-            "print(diamond.round(4).to_string(index=False))",
-            8,
-            "Regional price test\n"
-            + region_omnibus
-            + "\n\nDiamond-level summary\n"
-            + diamond,
+            "display(regional.round(6))\n"
+            "display(diamond.round(4))"
         ),
         _markdown_cell(
             "Only five observations are three-diamond restaurants, so a three-class prediction "
-            "model would be unstable. A simple one-way ANOVA gives $p=0.846$, not the 0.489 value "
-            "stated in the report; the earlier mixed-model specification was not preserved.\n\n"
+            "model would be unstable. A simple one-way ANOVA gives $p=0.846$.\n\n"
             "![Regional prices](../figures/price_by_region.png)"
         ),
         _markdown_cell(
             "## Conclusion\n\n"
-            "The Python analysis successfully reproduces the paper's main 233-row regression and "
-            "descriptive statistics. The strongest defensible conclusion is that taste has the "
-            "largest conditional association with the public total rating among listed restaurants. "
-            "The analysis does not recover Black Pearl's confidential selection algorithm, and the "
-            "diamond-level sample is too imbalanced for a reliable multiclass prediction model."
+            "Taste has the largest conditional association with the public total rating among the "
+            "three component scores in this sample. This is descriptive evidence, not a causal claim "
+            "or an estimate of the Black Pearl selection algorithm. The diamond-level sample is "
+            "too imbalanced for a reliable multiclass prediction model."
         ),
     ]
+    for index, cell in enumerate(cells):
+        cell["id"] = f"cell-{index:02d}"
 
     notebook = {
         "cells": cells,
@@ -647,7 +696,7 @@ def _build_notebook(project_root: Path, outputs: dict[str, pd.DataFrame]) -> Non
                 "language": "python",
                 "name": "python3",
             },
-            "language_info": {"name": "python", "version": "3.11"},
+            "language_info": {"name": "python", "version": "3.12"},
         },
         "nbformat": 4,
         "nbformat_minor": 5,
@@ -659,13 +708,19 @@ def run_analysis(project_root: Path, build_notebook: bool = True) -> dict[str, p
     project_root = Path(project_root).resolve()
     raw_path = project_root / "data" / "raw" / "black_pearl_2024.xlsx"
     processed_dir = project_root / "data" / "processed"
+    public_dir = project_root / "data" / "public"
     results_dir = project_root / "results"
     figures_dir = project_root / "figures"
     processed_dir.mkdir(parents=True, exist_ok=True)
+    public_dir.mkdir(parents=True, exist_ok=True)
     results_dir.mkdir(parents=True, exist_ok=True)
 
     data = clean_data(raw_path)
     data.to_csv(processed_dir / "black_pearl_clean.csv", index=False, encoding="utf-8-sig")
+    public_data = build_public_dataset(data)
+    public_data.to_csv(
+        public_dir / "black_pearl_restaurants.csv", index=False, encoding="utf-8-sig"
+    )
 
     duplicate_name_records = int(data.duplicated("restaurant_name", keep=False).sum())
     duplicate_key_records = int(data.duplicated("restaurant_key", keep=False).sum())
@@ -753,7 +808,7 @@ def run_analysis(project_root: Path, build_notebook: bool = True) -> dict[str, p
     betas.to_csv(results_dir / "standardized_betas.csv", index=False)
     vif = vif_table(data, predictors)
     vif.to_csv(results_dir / "vif.csv", index=False)
-    diagnostics = regression_diagnostics(data, fit)
+    diagnostics = regression_diagnostics(data, fit, predictors)
     diagnostics.to_csv(results_dir / "regression_diagnostics.csv", index=False)
 
     awards = award_tests(data)
@@ -795,7 +850,7 @@ def run_analysis(project_root: Path, build_notebook: bool = True) -> dict[str, p
         "diamond_summary": diamond_summary,
     }
     if build_notebook:
-        _build_notebook(project_root, outputs)
+        _build_notebook(project_root)
     return outputs
 
 
