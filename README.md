@@ -78,4 +78,4 @@ python src/analysis.py
 python -m unittest discover -s tests -v
 ```
 
-The Python script rebuilds the public CSV, result tables, figures and output-free notebook. The Excel file is a formatted copy of the canonical public CSV.
+The Python script generates the public CSV, result tables, figures and output-free notebook. The Excel file is a formatted copy of the canonical public CSV.

@@ -32,4 +32,4 @@ Regional price distributions are compared with Kruskal–Wallis testing. Pairwis
 
 ## Running and validation
 
-`src/analysis.py` rebuilds the public CSV, internal cleaned CSV, result tables, figures and output-free notebook from the preserved workbook. Randomized analysis uses seed `20261018` and 5,000 permutations. Dependency versions are pinned in `requirements.txt`.
+`src/analysis.py` generates the public CSV, internal cleaned CSV, result tables, figures and output-free notebook from the preserved workbook. Randomized analysis uses seed `20261018` and 5,000 permutations. Dependency versions are pinned in `requirements.txt`.

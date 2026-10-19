@@ -12,7 +12,7 @@ This dataset contains 233 restaurants listed in the Black Pearl Restaurant Guide
 - Per-record source URLs: not retained.
 - Guide/sample context: project materials identify the sample as the 2024 Black Pearl restaurant analysis dataset.
 
-These missing provenance details are disclosed rather than reconstructed. Numeric counts and ratings should be treated as a historical snapshot, not current platform values.
+These missing provenance details are disclosed rather than inferred. Numeric counts and ratings should be treated as a historical snapshot, not current platform values.
 
 ## Contents
 

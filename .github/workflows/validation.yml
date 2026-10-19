@@ -15,7 +15,7 @@ jobs:
           cache: pip
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Rebuild analysis
+      - name: Generate analysis outputs
         run: python src/analysis.py
       - name: Execute notebook
         run: >-
